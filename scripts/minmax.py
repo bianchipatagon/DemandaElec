@@ -5,7 +5,7 @@ import pandas as pd
 from matplotlib.dates import YearLocator, MonthLocator
 from matplotlib.ticker import MultipleLocator
 
-df = pd.read_csv('/home/emi/Documents/MAESTRIA/14-Metodología/DATOS/arg-dem.txt', header=None, delimiter=';')
+df = pd.read_csv('/home/emi/Documents/MAESTRIA/14-Metodología/DemandaElec/DATOS/arg-dem.txt', header=None, delimiter=';')
 df.index= pd.date_range(start='2007-01-01', end='2022-12-31', freq = 'D')
 print(df)
 
@@ -16,7 +16,7 @@ print(result)
 fig, ax = plt.subplots(1,1,figsize=(5,4), sharey=True)
 
 # ~ ax.plot(result.index, result['range'], color='black', linewidth=0.5)
-ax.bar(result.index, result['range'], width=1, edgecolor="white", linewidth=0.7)
+ax.bar(result.index, result['range'], width=1, edgecolor="white", linewidth=0.7, facecolor = "black" )
 ax.tick_params(axis='x', labelrotation = 90, labelsize=13)
 ax.tick_params(axis='y', labelsize=13)
 ax.set_ylabel('max-min [GWh]', fontsize=15)
