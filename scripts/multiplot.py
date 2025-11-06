@@ -3,10 +3,10 @@ import matplotlib.gridspec as gridspec
 import numpy as np
 import pandas as pd
 
-df = pd.read_csv('/home/emi/Documents/MAESTRIA/14-Metodología/DATOS/arg-dem.txt', header=None, delimiter=';')
+df = pd.read_csv('/home/emi/Documents/MAESTRIA/14-Metodología/DemandaElec/DATOS/arg-dem.txt', header=None, delimiter=';')
 df.index= pd.date_range(start='2007-01-01', end='2022-12-31', freq = 'D')
 
-df1 = pd.read_csv('/home/emi/Documents/MAESTRIA/14-Metodología/DATOS/semana.txt', header=None, delimiter=';')
+df1 = pd.read_csv('/home/emi/Documents/MAESTRIA/14-Metodología/DemandaElec/DATOS/semana.txt', header=None, delimiter=';')
 df1.index= pd.date_range(start='2021-11-29 00:00:00', end='2021-12-05 23:00:00', freq = 'H')
 print(df1)
 # Create figure and GridSpec
@@ -22,14 +22,16 @@ ax3 = fig.add_subplot(gs[1, 1])
 ax4 = fig.add_subplot(gs[1, 2])
 
 # Example plots
-ax1.plot(df.index, df[3], color='black', linewidth=0.5)
+ax1.plot(df.index, df[3], linewidth=0.5)
+ax1.fill_between(df.index, df[3], color='skyblue', alpha=0.4, label='Area under curve')
+
 ax1.set_title('a) Período completo')
 ax1.set_ylabel('[GWh]')
 start_date = pd.to_datetime('2007-01-01')
 end_date = pd.to_datetime('2022-12-31')
 ax1.set_xlim(start_date, end_date)
 
-ax2.plot(df.index, df[3], color='black', linewidth=0.5)
+ax2.plot(df.index, df[3], linewidth=0.75)
 ax2.set_title('b) 1 año')
 start_date = pd.to_datetime('2021-01-10')
 end_date = pd.to_datetime('2021-12-31')
@@ -37,14 +39,14 @@ ax2.set_xlim(start_date, end_date)
 ax2.tick_params(axis='x', labelrotation = 90, labelsize=11)
 ax2.set_ylabel('[GWh]')
 
-ax3.plot(df1.index, df1[1], color='black')
+ax3.plot(df1.index, df1[1])
 ax3.set_title('c) 1 semana')
 start_date = pd.to_datetime('2021-11-29')
 end_date = pd.to_datetime('2021-12-05')
 ax3.set_xlim(start_date, end_date)
 ax3.tick_params(axis='x', labelrotation = 90, labelsize=11)
 
-ax4.plot(df1.index, df1[1], color='black')
+ax4.plot(df1.index, df1[1])
 ax4.set_title('d) 1 dia')
 start_date = pd.to_datetime('2021-11-29')
 end_date = pd.to_datetime('2021-11-30')

@@ -16,10 +16,11 @@ print(result)
 fig, ax = plt.subplots(1,1,figsize=(5,4), sharey=True)
 
 # ~ ax.plot(result.index, result['range'], color='black', linewidth=0.5)
-ax.bar(result.index, result['range'], width=1, edgecolor="white", linewidth=0.7, facecolor = "black" )
+ax.bar(result.index, result['range'], width=1, edgecolor="white", linewidth=0.7 , alpha=0.8)
 ax.tick_params(axis='x', labelrotation = 90, labelsize=13)
 ax.tick_params(axis='y', labelsize=13)
 ax.set_ylabel('max-min [GWh]', fontsize=15)
+ax.set_ylim(100, 310)
 
 ax = plt.gca()
 ax.xaxis.set_major_locator(MultipleLocator(1))  # Tick every 5 units

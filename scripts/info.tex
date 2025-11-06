@@ -1,0 +1,117 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{graphicx} % Required for the inclusion of images
+\usepackage[utf8]{inputenc}
+%\usepackage{natbib} % Required to change bibliography style to APA
+\usepackage{amsmath} % Required for some math elements 
+\usepackage[spanish]{babel} 
+%\usepackage{fontspec}
+\usepackage{lineno,hyperref}
+\usepackage{upgreek}
+\usepackage{gensymb}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{textgreek}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{dirtytalk}
+\allowdisplaybreaks
+%\textwidth18cm
+%\textheight22cm
+%\topmargin0cm
+%\oddsidemargin2cm
+%\hypersetup{hidelinks}
+
+\usepackage{multirow}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    }
+\graphicspath{{../img_1122/}}
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\alph{enumi}.} % Make numbering in the enumerate environment by letter rather than number (e.g. section 6)
+
+\fancyhead[L]{\includegraphics[height=1cm]{images.png}}
+\fancyhead[C]{Especialización en Economía \\ y Gestión de los Recursos Energéticos}
+\fancyhead[R]{\includegraphics[height=1cm]{LOGO-UNCO.png}}
+
+% Optional: Add a line below the header
+%\renewcommand{\headrulewidth}{0.4pt}
+
+% Optional: Set footer page number
+\fancyfoot[C]{\thepage}
+
+
+\begin{document}
+	
+\pagestyle{fancy}
+\vspace{1cm}
+\vspace{2cm}
+\begin{center}
+%%	\centering
+
+	{\Large \textbf{Influencia de factores climáticos en la demanda eléctrica de
+			Argentina en diferentes escalas temporales}}\\
+	{Emilio Bianchi}\\
+	{Docente: Ignacio Sagardoy}
+\end{center}
+
+\tableofcontents
+
+\section{Introducción}
+A nivel global, los sistemas eléctricos regionales y nacionales son cada vez más sensibles a las variaciones climáticas \cite{hoste2009matching}. Tanto la oferta como la demanda eléctrica son afectadas por las condiciones meteorológicas y sus variaciones temporales \cite{dubus2018does, staffell2018increasing}. La demanda de electricidad está afectada principalmente por la temperatura del aire \cite{moral2005modelling, de2015seasonal, cassarino2018impact}; y otrás variables meteoroloógicas como velocidad del viento, nubosidad o radiación solar \cite{psiloglou2009factors, apadula2012relationships}. En los últimos años la sensibilidad de la demanda eléctrica a las variaciones climáticas a nivel global se ha incrementado debido a: 1) aumento de usos de calefacción y refrigeración en los sectores comercial y residencial \cite{auffhammer2014measuring, detemperatura, thornton2017relationship, cassarino2018impact} y 2) tendencias en variables climáticas como la temperatura del aire y aumento de frecuencia de eventos climáticos extremos \cite{apadula2012relationships, ke2016quantifying, anel2017impact}. Esta tendencia ha implicado cambios en los patrones estacionales de consumo eléctrico y aumentos en la potencia máxima demandada, lo cual tiende a aumentar los costos y la incertidumbre en la operación y planificación de los sistemas eléctricos \cite{ke2016quantifying, detemperatura,anel2017impact}.
+La demanda de electricidad a nivel de país o región depende de multiples factores no climáticos como población, actividad económica, características de los hogares \cite{psiloglou2009factors,cassarino2018impact, paliza2021demanda}; y climáticos \cite{moral2005modelling, apadula2012relationships}. La conjunción de estos factores otorgan a la demanda eléctrica características de variabilidad temporal particulares \cite{zanek2022definicion}. Se destacan periodicidades diarias, semanales y estacionales, y picos de consumo \cite{acker2011iea,zanek2022definicion}. Los operadores de los sistemas eléctricos deben regular la generación de energía eléctrica para satisfacer la demanda en todo momento, y prever disponibilidad de capacidad de generación para momentos de alto consumo \cite{acker2011iea,  thornton2017relationship}. Estas actividades de operación, mantenimiento y planificación realizadas por los administradores de los sistemas eléctricos tienen diferentes alcances temporales  \cite{acker2011iea,  khatoon2014effects}. Acker \cite{acker2011iea}  y Xue y Geng \cite{xue2012dynamic} brindan una clasificación de tres escalas temporales de la variabilidad de la demanda eléctrica, junto con sus drivers y operaciones en el sistema eléctrico asociadas:
+\begin{itemize}
+	\item  Corto plazo. Segundos – minutos – horas. Asociada a cambios en las condiciones meteorológicas. Actividades de regulación de frecuencia y seguimiento de carga.
+	\item  Mediano plazo. Dias – semanas. Asociada a variaciones meteorológicas en las 	escalas sinóptica y subestacional. Actividades de planificación diaria y estacional	de mantenimiento y disponibilidad de unidades de generación.
+	\item  Largo plazo. Meses – años. Asociada a variaciones climáticas estacionales y seculares y a otros factores no climáticos (actividad económica, población). Actividades de planificación estacional y planificación de incrementos de capacidad de generación de largo plazo.
+\end{itemize}
+
+Como se mencionó antes, la demanda eléctrica a nivel global esta experimentando un aumento en la sensibilidad a las variaciones climáticas debido a mayores requerimientos en los sectores comercial y residencial para usos de calefacción y refrigeración \cite{detemperatura, cassarino2018impact}. Esto, a su vez, es reforzado por tendencias climáticas y aumento en la frecuencia de eventos climáticos extremos \cite{apadula2012relationships,ke2016quantifying,anel2017impact} que se prevee que van a agravarse en el futuro \cite{eskeland2010electricity, mideksa2010impact}. En Argentina, de hecho, los records de potencia y energía en el Sistema Argentino De Interconexión (SADI) ocurren durante el invierno y verano asociados a eventos de temperaturas extremas en las zonas donde se concentra el mayor porcentaje de usuarios del mercado eléctrico (https://cammesaweb.cammesa.com/2023/03/14/maximos-historicos-de-energia-y- potencia-estacionales/). Es por esto que el estudio de las relaciones entre la variabilidad climática y la demanda eléctrica no solo brinda herramientas para mejorar la operación y planificación del sistema eléctrico en el corto y mediano plazo \cite{detemperatura, macmackin2019modeling}, si no también para prever el impácto de cambios climáticos de largo plazo \cite{bessec2008non, eskeland2010electricity}.
+Actualmente, salvo el trabajo de Zanek et al. \cite{zanek2022definicion}. para la ciudad de Salta, no existen antecedentes de estudio de la relación clima-demanda eléctrica en Argentina. El objetivo general de este trabajo es la caracterizarización de la influencia de las variaciones meteorológicas en la demanda eléctrica de Argentina en diferentes escalas
+temporales. Los Objetivos específicos son:
+
+\begin{itemize}
+	\item Caracterizar la influencia de las variaciones meteorológicas en la demanda eléctrica en escalas intra-diaria (horas) y diaria.
+	\item   Caracterizar la influencia de las variaciones meteorológicas en la demanda eléctrica en la escala intra-estacional (dias).
+	\item   Caracterizar la influencia de las variaciones meteorológicas en la demanda eléctrica en la escala estacional (meses) e interanual (años).
+\end{itemize}
+
+\cite{}
+
+\section{Metodología}
+\subsection{Datos}
+Actualmente se cuenta con una serie de demanda horaria para los años 2021-2022-2023 provistos por un investigador de Fundación Bariloche, y con una serie de demanda diaria para el período de 2007-2022. Se trabajara con series de datos climáticos en diferentes resoluciones temporales (horarias- diarias-mensuales) para la región donde se concentra la mayor cantidad de usuarios del mercado eléctrico de Argentina. Será prioritario el uso de datos observacionales de la red del Servicio Meteorológico Nacional. Estos datos se gestionarán a traves del Centro de Información Meteorológica
+(https://www.argentina.gob.ar/smn/institucional/contacto). En caso de no contar con alguna serie observacional, se complementará con información del reanalisis
+climático MERRA2 (https://gmao.gsfc.nasa.gov/reanalysis/merra-2/) \cite{gelaro2017modern}
+
+\subsection{Metodos}
+La serie de demanda eléctrica es una agregación de los consumos individuales de multiples usuarios que estan dispersos geográficamente. Las variaciones climáticas afectan a todos, de diferentes maneras dependiendo de la región en la que se encuentran. Los consumidores de energía eléctrica no se encuentran equidistribuidos en el territorio, si no que se concentran en diferentes regiones. Actualmente, cerca del 70\% de la energía eléctrica consumida anualmente se concentra en las regiones Centro, Litoral, C.A.B.A. y G.B.A (ver figura \ref{mapa}). Una aproximación para confeccionar series de datos climáticos representativas de las zonas de mayor demanda eléctrica sería realizar un promedio ponderado por población o por consumo eléctrico de series en los principales centros urbanos.
+
+\begin{figure}[H]
+	\includegraphics[clip,width=.8\columnwidth]{mapa.png}
+	\caption{\label{mapa} Distribución geográfica de la demanda eléctrica del año 2024. Adaptado de CAMMESA}
+\end{figure}
+
+Luego, es necesario aislar la variabilidad de causa climática de la no-climática, o aislar la variabilidad climática propia de la escala temporal. Esto será abordado de manera diferente para cada escala temporal a abordar.
+Para la escala temporal de corto plazo (datos horarios), se analizará la presencia de una tendencia de largo plazo en la serie de tres años y, eventualmente se removerá. Se realizará el mismo procedimiento con los datos climáticos. Luego, se realizará un análisis para cada mes por separado para eliminar el efecto de la variación anual. No se tendran en cuenta en el análisis los dias feriados ni los fines de semana. Se realizaran composites de curvas diarias de demanda eléctrica para diferentes valores o rangos de valores de variables climáticas. En la escala de mediano plazo (datos diarios), se implemetará el metodo de Cerne & Vera (\cite{cerne2011influence})  para aislar la variabilidad climática intra-estacional en una serie temporal: a cada valor diario se le substrae el promedio diario climatologico (que responde al ciclo anual), y el desvio estacional (que responde a la anomalía climática de cada año en particular). Por ejemplo, la anomalía intraestacional de un año (a) y dia (d) particular en el trimestre de verano (DEF) es:
+\\\\
+Anomalía intraestacional_{(d,a)} =  valor \,diario_{(d,a)} \,–\, promedio \,diario \\\\ \,climátológico_{(d)} \,– \,(promedio \,estacional \,DEF_{(a)} \,– \,promedio \,estacional \,DEF \\\\ \,de \,largo \,plazo)
+\\\\
+
+Este procedimiento elimina las tendencias de largo plazo de las series temporales por lo que no es necesario realizar otro procedimiento. Se eliminarán del análisis los dias feriados y fines de semana. Los datos serán agrupados por estaciones, y se analizara la relación entre la demanda eléctrica y las variables climáticas en forma gráfica y mediante tablas de contingencia y análisis de significancia de coeficientes de correlación lineales o no lineales. Para la escala temporal de largo plazo (datos mensuales), se eliminará la tendencia de largo plazo en la serie de demanda. Esto puede hacerse mediante algún metodo multivariado que contemple el efecto del nivel de actividad económica como sugiere Psiloglou et al. (\cite{psiloglou2009factors}). Luego, se analizara la relación entre la demanda eléctrica y las variables climáticas en forma gráfica y mediante tablas de contingencia y análisis de significancia de coeficientes de correlación lineales o no lineales.
+
+\section{Referencias}
+
+\bibliography{mybibfile}
+
+%\bibliographystyle{unsrt}
+%\bibliography{mybibfile}
+%\bibliography{mybibfile}
+
+%----------------------------------------------------------------------------------------
+
+
+\end{document}
