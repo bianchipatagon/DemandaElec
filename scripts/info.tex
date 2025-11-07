@@ -35,7 +35,7 @@
 
 \fancyhead[L]{\includegraphics[height=1cm]{images.png}}
 \fancyhead[C]{Especialización en Economía \\ y Gestión de los Recursos Energéticos}
-\fancyhead[R]{\includegraphics[height=1cm]{LOGO-UNCO.png}}
+\fancyhead[R]{\includegraphics[height=1cm]{isologotipo-unco-azul.png}}
 
 % Optional: Add a line below the header
 %\renewcommand{\headrulewidth}{0.4pt}
@@ -102,6 +102,28 @@ Anomalía intraestacional_{(d,a)} =  valor \,diario_{(d,a)} \,–\, promedio \,d
 \\\\
 
 Este procedimiento elimina las tendencias de largo plazo de las series temporales por lo que no es necesario realizar otro procedimiento. Se eliminarán del análisis los dias feriados y fines de semana. Los datos serán agrupados por estaciones, y se analizara la relación entre la demanda eléctrica y las variables climáticas en forma gráfica y mediante tablas de contingencia y análisis de significancia de coeficientes de correlación lineales o no lineales. Para la escala temporal de largo plazo (datos mensuales), se eliminará la tendencia de largo plazo en la serie de demanda. Esto puede hacerse mediante algún metodo multivariado que contemple el efecto del nivel de actividad económica como sugiere Psiloglou et al. (\cite{psiloglou2009factors}). Luego, se analizara la relación entre la demanda eléctrica y las variables climáticas en forma gráfica y mediante tablas de contingencia y análisis de significancia de coeficientes de correlación lineales o no lineales.
+
+\section{Resultados}
+
+\begin{figure}[H]
+	\includegraphics[clip,width=.9\columnwidth]{multi.png}
+	\caption{\label{demanda} Serie diaria de demanda eléctrica (a), y escalas características de variabilidad (b, c y d)}
+\end{figure}
+
+\begin{figure}[H]
+	\includegraphics[clip,width=.8\columnwidth]{minmax.png}
+	\caption{\label{aumento} Diferencia anual entre maximo y mínimo absolutos de demanda diaria}
+\end{figure}
+
+\begin{figure}[H]
+	\includegraphics[clip,width=1.2\columnwidth]{decomp.png}
+	\caption{\label{loess} Descomposición de Loess de la serie de demanda diaria (a) en las componentes de tendencia (b), estacional (c) y residual (d)}
+\end{figure}
+
+\begin{figure}[H]
+	\includegraphics[clip,width=1\columnwidth]{scatter_temp.jpg}
+	\caption{\label{scatter} Diagramas de dispersión entre demanda eléctrica y temperatura del aire}
+\end{figure}
 
 \section{Referencias}
 
