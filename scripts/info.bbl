@@ -1,0 +1,126 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{hoste2009matching}
+G.~Hoste, M.~Dvorak, M.~Z. Jacobson, Matching hourly and peak demand by
+  combining different renewable energy sources, Sanford University, Department
+  of Civil and Environmental Engineering (2009).
+
+\bibitem{dubus2018does}
+L.~Dubus, S.~Muralidharan, A.~Troccoli, What does the energy industry require
+  from meteorology?, in: Weather \& Climate Services for the Energy Industry,
+  Springer International Publishing Cham, 2018, pp. 41--63.
+
+\bibitem{staffell2018increasing}
+I.~Staffell, S.~Pfenninger, The increasing impact of weather on electricity
+  supply and demand, Energy 145 (2018) 65--78.
+
+\bibitem{moral2005modelling}
+J.~Moral-Carcedo, J.~Vic{\'e}ns-Otero, Modelling the non-linear response of
+  spanish electricity demand to temperature variations, Energy economics 27~(3)
+  (2005) 477--494.
+
+\bibitem{de2015seasonal}
+M.~De~Felice, A.~Alessandri, F.~Catalano, Seasonal climate forecasts for
+  medium-term electricity demand forecasting, Applied Energy 137 (2015)
+  435--444.
+
+\bibitem{cassarino2018impact}
+T.~G. Cassarino, E.~Sharp, M.~Barrett, The impact of social and weather drivers
+  on the historical electricity demand in europe, Applied energy 229 (2018)
+  176--185.
+
+\bibitem{psiloglou2009factors}
+B.~Psiloglou, C.~Giannakopoulos, S.~Majithia, M.~Petrakis, Factors affecting
+  electricity demand in athens, greece and london, uk: A comparative
+  assessment, Energy 34~(11) (2009) 1855--1863.
+
+\bibitem{apadula2012relationships}
+F.~Apadula, A.~Bassini, A.~Elli, S.~Scapin, Relationships between
+  meteorological variables and monthly electricity demand, Applied Energy 98
+  (2012) 346--356.
+
+\bibitem{auffhammer2014measuring}
+M.~Auffhammer, E.~T. Mansur, Measuring climatic impacts on energy consumption:
+  A review of the empirical literature, Energy Economics 46 (2014) 522--530.
+
+\bibitem{detemperatura}
+S.~de~Escenarios, La temperatura y su influencia en la demanda de energ{\'\i}a
+  el{\'e}ctrica: Un an{\'a}lisis regional para argentina usando modelos
+  econom{\'e}tricos.
+
+\bibitem{thornton2017relationship}
+H.~E. Thornton, A.~A. Scaife, B.~J. Hoskins, D.~J. Brayshaw, The relationship
+  between wind power, electricity demand and winter weather patterns in great
+  britain, Environmental Research Letters 12~(6) (2017) 064017.
+
+\bibitem{ke2016quantifying}
+X.~Ke, D.~Wu, J.~Rice, M.~Kintner-Meyer, N.~Lu, Quantifying impacts of heat
+  waves on power grid operation, Applied energy 183 (2016) 504--512.
+
+\bibitem{anel2017impact}
+J.~A. A{\~n}el, M.~Fern{\'a}ndez-Gonz{\'a}lez, X.~Labandeira,
+  X.~L{\'o}pez-Otero, L.~De~la Torre, Impact of cold waves and heat waves on
+  the energy production sector, Atmosphere 8~(11) (2017) 209.
+
+\bibitem{paliza2021demanda}
+L.~M.~G. Paliza, K.~Caballera~G{\"u}edndulain, C.~A. Francisco~Cruz, La demanda
+  de electricidad residencial y el cambio clim{\'a}tico en argentina, brasil,
+  chile y colombia., Revista Chilena de Econom{\'\i}a y Sociedad 15~(2) (2021).
+
+\bibitem{zanek2022definicion}
+F.~Zanek, E.~Xamena, D.~Rodr{\'\i}guez, Definici{\'o}n de una red neuronal para
+  simular el consumo el{\'e}ctrico horario de la ciudad de salta, in: Simposio
+  Argentino de Inteligencia Artificial (ASAI 2022)-JAIIO 51 (Modalidad virtual
+  y presencial (UAI), octubre 2022), 2022.
+
+\bibitem{acker2011iea}
+T.~Acker, Iea wind task 24 integration of wind and hydropower systems; volume
+  1: Issues, impacts, and economics of wind and hydropower integration, Tech.
+  rep., National Renewable Energy Lab.(NREL), Golden, CO (United States)
+  (2011).
+
+\bibitem{khatoon2014effects}
+S.~Khatoon, A.~K. Singh, et~al., Effects of various factors on electric load
+  forecasting: An overview, in: 2014 6th IEEE Power India International
+  Conference (PIICON), IEEE, 2014, pp. 1--5.
+
+\bibitem{xue2012dynamic}
+B.~Xue, J.~Geng, Dynamic transverse correction method of middle and long term
+  energy forecasting based on statistic of forecasting errors, in: 2012 10th
+  International Power \& Energy Conference (IPEC), IEEE, 2012, pp. 253--256.
+
+\bibitem{eskeland2010electricity}
+G.~S. Eskeland, T.~K. Mideksa, Electricity demand in a changing climate,
+  Mitigation and Adaptation Strategies for Global Change 15~(8) (2010)
+  877--897.
+
+\bibitem{mideksa2010impact}
+T.~K. Mideksa, S.~Kallbekken, The impact of climate change on the electricity
+  market: A review, Energy policy 38~(7) (2010) 3579--3585.
+
+\bibitem{macmackin2019modeling}
+N.~MacMackin, L.~Miller, R.~Carriveau, Modeling and disaggregating hourly
+  effects of weather on sectoral electricity demand, Energy 188 (2019) 115956.
+
+\bibitem{bessec2008non}
+M.~Bessec, J.~Fouquau, The non-linear link between electricity consumption and
+  temperature in europe: A threshold panel approach, Energy Economics 30~(5)
+  (2008) 2705--2721.
+
+\bibitem{gelaro2017modern}
+R.~Gelaro, W.~McCarty, M.~J. Su{\'a}rez, R.~Todling, A.~Molod, L.~Takacs, C.~A.
+  Randles, A.~Darmenov, M.~G. Bosilovich, R.~Reichle, et~al., The modern-era
+  retrospective analysis for research and applications, version 2 (merra-2),
+  Journal of climate 30~(14) (2017) 5419--5454.
+
+\bibitem{cerne2011influence}
+S.~B. Cerne, C.~S. Vera, Influence of the intraseasonal variability on heat
+  waves in subtropical south america, Climate Dynamics 36~(11) (2011)
+  2265--2277.
+
+\end{thebibliography}

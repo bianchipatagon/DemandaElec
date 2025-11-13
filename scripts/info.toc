@@ -4,4 +4,8 @@
 \contentsline {subsection}{\numberline {2.1}Datos}{3}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Metodos}{3}{subsection.2.2}%
 \contentsline {section}{\numberline {3}Resultados}{6}{section.3}%
-\contentsline {section}{\numberline {4}Referencias}{7}{section.4}%
+\contentsline {subsection}{\numberline {3.1}Descripción de demanda eléctrica}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Escala intra-diaria}{8}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Escala intra-estacional}{9}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Escala estacional/interanual}{12}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Referencias}{12}{section.4}%

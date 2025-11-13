@@ -1,46 +1,50 @@
 This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: info.aux
-I found no \bibstyle command---while reading file info.aux
+The style file: elsarticle-num.bst
+Database file #1: mybibfile.bib
+Warning--empty journal in detemperatura
+Warning--empty year in detemperatura
+Warning--empty pages in zanek2022definicion
 You've used 24 entries,
-            0 wiz_defined-function locations,
-            108 strings with 917 characters,
-and the built_in function-call counts, 0 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 0
-:= -- 0
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
+            2952 wiz_defined-function locations,
+            817 strings with 10049 characters,
+and the built_in function-call counts, 7361 in all, are:
+= -- 697
+> -- 249
+< -- 3
++ -- 99
+- -- 75
+* -- 512
+:= -- 1020
+add.period$ -- 24
+call.type$ -- 24
+change.case$ -- 25
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 0
-format.name$ -- 0
-if$ -- 0
+cite$ -- 27
+duplicate$ -- 224
+empty$ -- 825
+format.name$ -- 97
+if$ -- 1885
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 0
-num.names$ -- 0
-pop$ -- 0
-preamble$ -- 0
+int.to.str$ -- 24
+missing$ -- 23
+newline$ -- 80
+num.names$ -- 24
+pop$ -- 148
+preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 0
+skip$ -- 473
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 466
+swap$ -- 40
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 0
-(There was 1 error message)
+warning$ -- 3
+while$ -- 62
+width$ -- 26
+write$ -- 202
+(There were 3 warnings)
