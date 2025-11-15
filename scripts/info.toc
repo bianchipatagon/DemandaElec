@@ -6,6 +6,6 @@
 \contentsline {section}{\numberline {3}Resultados}{6}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Descripción de demanda eléctrica}{6}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Escala intra-diaria}{8}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Escala intra-estacional}{9}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Escala estacional/interanual}{12}{subsection.3.4}%
-\contentsline {section}{\numberline {4}Referencias}{12}{section.4}%
+\contentsline {subsection}{\numberline {3.3}Escala intra-estacional}{8}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Escala estacional/interanual}{11}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Referencias}{11}{section.4}%
