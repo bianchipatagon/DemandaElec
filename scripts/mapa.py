@@ -13,8 +13,8 @@ import matplotlib as mpl
 from matplotlib.patches import Patch
 
 
-Argentina = gpd.read_file('/home/emi/Documents/MAESTRIA/14-Metodología/DemandaElec/scripts/provincia/provinciaPolygon.shp')
-GBA = gpd.read_file('/home/emi/Documents/MAESTRIA/14-Metodología/DemandaElec/scripts/AMBA/AMBA.shp')
+Argentina = gpd.read_file('/home/emi/Documents/MAESTRIA/14-Metodología/shpes/provincia/provinciaPolygon.shp')
+GBA = gpd.read_file('/home/emi/Documents/MAESTRIA/14-Metodología/shpes/AMBA/AMBA.shp')
 GBA = GBA.dissolve()
 
 Patagonia = Argentina.iloc[[10, 11, 20]]
@@ -55,7 +55,7 @@ Litoral.plot(ax=ax, color='mediumblue', linewidth=1, alpha=0.9,edgecolor='grey',
 
 GBA.plot(ax=ax, color='darkblue', linewidth=1, alpha=0.9,edgecolor='grey',label = '< 52000 GWh')
 
-ax.set_ylim(-58, -20)
+ax.set_ylim(-56, -20)
 ax.set_xlim(-74, -50)
 ax.tick_params(axis='both', labelsize=16)
 ax.text(-71,-45, 'Patagonia \n 4.5%')
@@ -77,6 +77,7 @@ legend_elements = [
 ]
 
 ax.legend(handles=legend_elements, fontsize=13, frameon=False, loc='center', bbox_to_anchor=(0.73, 0.27))
+ax.tick_params(axis='both', labelsize=0, color='white')
 
 plt.savefig('mapa.png', dpi=600, bbox_inches="tight")
 

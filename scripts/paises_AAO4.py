@@ -97,7 +97,7 @@ fig, (ax1,ax2,ax3,ax4) = plt.subplots(1, 4,figsize=(7.5,1.75), sharex= True, sha
 
 ########## argentina
 
-ax1.set_title('DEF', fontsize=13, weight='bold')
+ax1.set_title('DEF', fontsize=13)
 ax1.bar(X, Dargver, alpha = 0.8)
 ax1.tick_params(labelsize=14)
 ax1.axhline(y=0, color="black", linestyle="--", linewidth = 1.5, alpha = 1, zorder = 0)
@@ -105,7 +105,7 @@ ax1.set_yticks([-2,2], ['-2','2'])
 ax1.set_ylim(-3,3)
 # ~ ax1.xaxis.set_tick_params(length=0)
 
-ax2.set_title('MAM', fontsize=13, weight='bold')
+ax2.set_title('MAM', fontsize=13)
 ax2.bar(X, Dargoto, alpha = 0.8)
 ax2.tick_params(labelsize=14)
 ax2.axhline(y=0, color="black", linestyle="--", linewidth = 1.5, alpha = 1, zorder = 0)
@@ -113,7 +113,7 @@ ax2.set_yticks([-2,2], ['-2','2'])
 ax2.set_ylim(-3,3)
 # ~ ax2.xaxis.set_tick_params(length=0)
 
-ax3.set_title('JJA', fontsize=13, weight='bold')
+ax3.set_title('JJA', fontsize=13)
 ax3.bar(X, Darginv, alpha = 0.8)
 ax3.tick_params(labelsize=14)
 ax3.axhline(y=0, color="black", linestyle="--", linewidth = 1.5, alpha = 1, zorder = 0)
@@ -121,7 +121,7 @@ ax3.set_yticks([-2,2], ['-2','2'])
 ax3.set_ylim(-3,3)
 # ~ ax3.xaxis.set_tick_params(length=0)
 
-ax4.set_title('SON', fontsize=13, weight='bold')
+ax4.set_title('SON', fontsize=13)
 ax4.bar(X, Dargpri, alpha = 0.8, label= 'radiation')
 ax4.tick_params(labelsize=14)
 ax4.axhline(y=0, color="black", linestyle="--", linewidth = 1.5, alpha = 1, zorder = 0)
