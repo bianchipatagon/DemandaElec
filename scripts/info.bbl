@@ -112,6 +112,32 @@ M.~Bessec, J.~Fouquau, The non-linear link between electricity consumption and
   temperature in europe: A threshold panel approach, Energy Economics 30~(5)
   (2008) 2705--2721.
 
+\bibitem{hor2006daily}
+C.-L. Hor, S.~J. Watson, S.~Majithia, Daily load forecasting and maximum demand
+  estimation using arima and garch, in: 2006 International conference on
+  probabilistic methods applied to power systems, IEEE, 2006, pp. 1--6.
+
+\bibitem{son2017short}
+H.~Son, C.~Kim, Short-term forecasting of electricity demand for the
+  residential sector using weather and social variables, Resources,
+  conservation and recycling 123 (2017) 200--207.
+
+\bibitem{morais2023short}
+L.~B.~S. Morais, G.~Aquila, V.~A.~D. de~Faria, L.~M.~M. Lima, J.~W.~M. Lima,
+  A.~R. de~Queiroz, Short-term load forecasting using neural networks and
+  global climate models: An application to a large-scale electrical power
+  system, Applied Energy 348 (2023) 121439.
+
+\bibitem{juntunen2023electricity}
+V.~Juntunen, T.~Asikainen, Electricity consumption in finland influenced by
+  climate effects of energetic particle precipitation, Scientific Reports
+  13~(1) (2023) 20546.
+
+\bibitem{zhang2024potential}
+M.~Zhang, L.~Yan, Y.~Amonkar, A.~Nayak, U.~Lall, Potential climate
+  predictability of renewable energy supply and demand for texas given the enso
+  hidden state, Science Advances 10~(44) (2024) eado3517.
+
 \bibitem{gelaro2017modern}
 R.~Gelaro, W.~McCarty, M.~J. Su{\'a}rez, R.~Todling, A.~Molod, L.~Takacs, C.~A.
   Randles, A.~Darmenov, M.~G. Bosilovich, R.~Reichle, et~al., The modern-era
@@ -122,5 +148,75 @@ R.~Gelaro, W.~McCarty, M.~J. Su{\'a}rez, R.~Todling, A.~Molod, L.~Takacs, C.~A.
 S.~B. Cerne, C.~S. Vera, Influence of the intraseasonal variability on heat
   waves in subtropical south america, Climate Dynamics 36~(11) (2011)
   2265--2277.
+
+\bibitem{kim2018prediction}
+H.~Kim, F.~Vitart, D.~E. Waliser, Prediction of the madden--julian oscillation:
+  A review, Journal of Climate 31~(23) (2018) 9425--9443.
+
+\bibitem{zhang2005madden}
+C.~Zhang, Madden-julian oscillation, Reviews of Geophysics 43~(2) (2005).
+
+\bibitem{donald2006near}
+A.~Donald, H.~Meinke, B.~Power, A.~d.~H. Maia, M.~C. Wheeler, N.~White, R.~C.
+  Stone, J.~Ribbe, Near-global impact of the madden-julian oscillation on
+  rainfall, Geophysical Research Letters 33~(9) (2006).
+
+\bibitem{zhang2013madden}
+C.~Zhang, Madden--julian oscillation: Bridging weather and climate, Bulletin of
+  the American Meteorological Society 94~(12) (2013) 1849--1870.
+
+\bibitem{alvarez2016influence}
+M.~S. Alvarez, C.~Vera, G.~N. Kiladis, B.~Liebmann, Influence of the madden
+  julian oscillation on precipitation and surface air temperature in south
+  america, Climate Dynamics 46~(1) (2016) 245--262.
+
+\bibitem{ungerovich2021influence}
+M.~Ungerovich, M.~Barreiro, C.~Masoller, Influence of madden--julian
+  oscillation on extreme rainfall events in spring in southern uruguay,
+  International Journal of Climatology 41~(5) (2021) 3339--3351.
+
+\bibitem{jacques2021intraseasonal}
+M.~Jacques-Coper, D.~Veloso-Aguila, C.~Segura, A.~Valencia, Intraseasonal
+  teleconnections leading to heat waves in central chile, International Journal
+  of Climatology 41~(9) (2021) 4712--4731.
+
+\bibitem{gong1999definition}
+D.~Gong, S.~Wang, Definition of antarctic oscillation index, Geophysical
+  research letters 26~(4) (1999) 459--462.
+
+\bibitem{carvalho2005opposite}
+L.~M. Carvalho, C.~Jones, T.~Ambrizzi, Opposite phases of the antarctic
+  oscillation and relationships with intraseasonal to interannual activity in
+  the tropics during the austral summer, Journal of climate 18~(5) (2005)
+  702--718.
+
+\bibitem{garreaud2009present}
+R.~D. Garreaud, M.~Vuille, R.~Compagnucci, J.~Marengo, Present-day south
+  american climate, Palaeogeography, Palaeoclimatology, Palaeoecology 281~(3-4)
+  (2009) 180--195.
+
+\bibitem{silvestri2009nonstationary}
+G.~Silvestri, C.~Vera, Nonstationary impacts of the southern annular mode on
+  southern hemisphere climate, Journal of Climate 22~(22) (2009) 6142--6148.
+
+\bibitem{wheeler2004all}
+M.~C. Wheeler, H.~H. Hendon, An all-season real-time multivariate mjo index:
+  Development of an index for monitoring and prediction, Monthly weather review
+  132~(8) (2004) 1917--1932.
+
+\bibitem{cleveland1990stl}
+R.~B. Cleveland, W.~S. Cleveland, J.~E. McRae, I.~Terpenning, et~al., Stl: A
+  seasonal-trend decomposition, J. off. Stat 6~(1) (1990) 3--73.
+
+\bibitem{grimm2000climate}
+A.~M. Grimm, V.~R. Barros, M.~E. Doyle, Climate variability in southern south
+  america associated with el ni{\~n}o and la ni{\~n}a events, Journal of
+  climate 13~(1) (2000) 35--58.
+
+\bibitem{cai2020climate}
+W.~Cai, M.~J. McPhaden, A.~M. Grimm, R.~R. Rodrigues, A.~S. Taschetto, R.~D.
+  Garreaud, B.~Dewitte, G.~Poveda, Y.-G. Ham, A.~Santoso, et~al., Climate
+  impacts of the el ni{\~n}o--southern oscillation on south america, Nature
+  Reviews Earth \& Environment 1~(4) (2020) 215--231.
 
 \end{thebibliography}

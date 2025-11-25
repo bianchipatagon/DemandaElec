@@ -3,48 +3,49 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: info.aux
 The style file: elsarticle-num.bst
 Database file #1: mybibfile.bib
+Warning--I didn't find a database entry for "gillett2006regional"
 Warning--empty journal in detemperatura
 Warning--empty year in detemperatura
 Warning--empty pages in zanek2022definicion
-You've used 24 entries,
+You've used 44 entries,
             2952 wiz_defined-function locations,
-            817 strings with 10049 characters,
-and the built_in function-call counts, 7361 in all, are:
-= -- 697
-> -- 249
-< -- 3
-+ -- 99
-- -- 75
-* -- 512
-:= -- 1020
-add.period$ -- 24
-call.type$ -- 24
-change.case$ -- 25
+            939 strings with 14288 characters,
+and the built_in function-call counts, 13630 in all, are:
+= -- 1297
+> -- 491
+< -- 4
++ -- 193
+- -- 149
+* -- 1006
+:= -- 1900
+add.period$ -- 44
+call.type$ -- 44
+change.case$ -- 45
 chr.to.int$ -- 0
-cite$ -- 27
-duplicate$ -- 224
-empty$ -- 825
-format.name$ -- 97
-if$ -- 1885
+cite$ -- 47
+duplicate$ -- 390
+empty$ -- 1494
+format.name$ -- 189
+if$ -- 3460
 int.to.chr$ -- 0
-int.to.str$ -- 24
-missing$ -- 23
-newline$ -- 80
-num.names$ -- 24
-pop$ -- 148
+int.to.str$ -- 44
+missing$ -- 43
+newline$ -- 140
+num.names$ -- 44
+pop$ -- 250
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 473
+skip$ -- 847
 stack$ -- 0
-substring$ -- 466
-swap$ -- 40
-text.length$ -- 3
+substring$ -- 910
+swap$ -- 64
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 62
-width$ -- 26
-write$ -- 202
-(There were 3 warnings)
+while$ -- 116
+width$ -- 46
+write$ -- 365
+(There were 4 warnings)
