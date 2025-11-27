@@ -160,6 +160,7 @@ horas = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24]
 
 tem = pd.read_csv('/home/emi/Documents/MAESTRIA/14-Metodología/DemandaElec/DATOS/prueba_t.txt', header=None, delimiter=',', na_values='-99')
 tem.index = pd.date_range(start="2021-01-01 00:00:00", end="2023-12-31  23:00:00",freq="H")
+print("tem")
 print(tem)
 
 # promedio ponderado de nubosidad por la poblacion de GBA, GCA, GROS
@@ -301,153 +302,155 @@ corr_dic_t = [N.corrcoef(tem_dic1[2],tem_dic1[9])[0, 1],N.corrcoef(tem_dic2[2],t
 ,N.corrcoef(tem_dic11[2],tem_dic11[9])[0, 1],N.corrcoef(tem_dic12[2],tem_dic12[9])[0, 1],N.corrcoef(tem_dic13[2],tem_dic13[9])[0, 1],N.corrcoef(tem_dic14[2],tem_dic14[9])[0, 1],N.corrcoef(tem_dic15[2],tem_dic15[9])[0, 1]
 ,N.corrcoef(tem_dic16[2],tem_dic16[9])[0, 1],N.corrcoef(tem_dic17[2],tem_dic17[9])[0, 1],N.corrcoef(tem_dic18[2],tem_dic18[9])[0, 1],N.corrcoef(tem_dic19[2],tem_dic19[9])[0, 1],N.corrcoef(tem_dic20[2],tem_dic20[9])[0, 1]
 ,N.corrcoef(tem_dic21[2],tem_dic21[9])[0, 1],N.corrcoef(tem_dic22[2],tem_dic22[9])[0, 1],N.corrcoef(tem_dic23[2],tem_dic23[9])[0, 1],N.corrcoef(tem_dic24[2],tem_dic24[9])[0, 1]]
-
+print(corr_dic_t )
 #############
 ############# viento
 
 vie = pd.read_csv('/home/emi/Documents/MAESTRIA/14-Metodología/DemandaElec/DATOS/prueba_v.txt', header=None, delimiter=',', na_values='-99')
 vie.index = pd.date_range(start="2021-01-01 00:00:00", end="2023-12-31  23:00:00",freq="H")
-
+print("vie")
+print(vie)
 # promedio ponderado de nubosidad por la poblacion de GBA, GCA, GROS
 
-vie[6] = round(0.81*vie[9] + 0.1*vie[10] + 0.09*vie[11],0)
+vie[13] = round(0.81*vie[10] + 0.1*vie[11] + 0.09*vie[12],0)
 
 # nos quedamos con los dias de la semana
-vie = vie.loc[(vie[1] == 1) | (vie[1] == 2) | (vie[1] == 3) | (vie[1] == 4) | (vie[1] == 5)]
+vie = vie.loc[(vie[2] == 1) | (vie[2] == 2) | (vie[2] == 3) | (vie[2] == 4) | (vie[2] == 5)]
 
 # abril
 vie_abr = vie[vie.index.month == 4]
-vie_abr1 = vie_abr.loc[(vie_abr[0] == 1)]
-vie_abr2 = vie_abr.loc[(vie_abr[0] == 2)]
-vie_abr3 = vie_abr.loc[(vie_abr[0] == 3)]
-vie_abr4 = vie_abr.loc[(vie_abr[0] == 4)]
-vie_abr5 = vie_abr.loc[(vie_abr[0] == 5)]
-vie_abr6 = vie_abr.loc[(vie_abr[0] == 6)]
-vie_abr7 = vie_abr.loc[(vie_abr[0] == 7)]
-vie_abr8 = vie_abr.loc[(vie_abr[0] == 8)]
-vie_abr9 = vie_abr.loc[(vie_abr[0] == 9)]
-vie_abr10 = vie_abr.loc[(vie_abr[0] == 10)]
-vie_abr11 = vie_abr.loc[(vie_abr[0] == 11)]
-vie_abr12 = vie_abr.loc[(vie_abr[0] == 12)]
-vie_abr13 = vie_abr.loc[(vie_abr[0] == 13)]
-vie_abr14 = vie_abr.loc[(vie_abr[0] == 14)]
-vie_abr15 = vie_abr.loc[(vie_abr[0] == 15)]
-vie_abr16 = vie_abr.loc[(vie_abr[0] == 16)]
-vie_abr17 = vie_abr.loc[(vie_abr[0] == 17)]
-vie_abr18 = vie_abr.loc[(vie_abr[0] == 18)]
-vie_abr19 = vie_abr.loc[(vie_abr[0] == 19)]
-vie_abr20 = vie_abr.loc[(vie_abr[0] == 20)]
-vie_abr21 = vie_abr.loc[(vie_abr[0] == 21)]
-vie_abr22 = vie_abr.loc[(vie_abr[0] == 22)]
-vie_abr23 = vie_abr.loc[(vie_abr[0] == 23)]
-vie_abr24 = vie_abr.loc[(vie_abr[0] == 24)]
+print(vie_abr)
+vie_abr1 = vie_abr.loc[(vie_abr[1] == 1)]
+vie_abr2 = vie_abr.loc[(vie_abr[1] == 2)]
+vie_abr3 = vie_abr.loc[(vie_abr[1] == 3)]
+vie_abr4 = vie_abr.loc[(vie_abr[1] == 4)]
+vie_abr5 = vie_abr.loc[(vie_abr[1] == 5)]
+vie_abr6 = vie_abr.loc[(vie_abr[1] == 6)]
+vie_abr7 = vie_abr.loc[(vie_abr[1] == 7)]
+vie_abr8 = vie_abr.loc[(vie_abr[1] == 8)]
+vie_abr9 = vie_abr.loc[(vie_abr[1] == 9)]
+vie_abr10 = vie_abr.loc[(vie_abr[1] == 10)]
+vie_abr11 = vie_abr.loc[(vie_abr[1] == 11)]
+vie_abr12 = vie_abr.loc[(vie_abr[1] == 12)]
+vie_abr13 = vie_abr.loc[(vie_abr[1] == 13)]
+vie_abr14 = vie_abr.loc[(vie_abr[1] == 14)]
+vie_abr15 = vie_abr.loc[(vie_abr[1] == 15)]
+vie_abr16 = vie_abr.loc[(vie_abr[1] == 16)]
+vie_abr17 = vie_abr.loc[(vie_abr[1] == 17)]
+vie_abr18 = vie_abr.loc[(vie_abr[1] == 18)]
+vie_abr19 = vie_abr.loc[(vie_abr[1] == 19)]
+vie_abr20 = vie_abr.loc[(vie_abr[1] == 20)]
+vie_abr21 = vie_abr.loc[(vie_abr[1] == 21)]
+vie_abr22 = vie_abr.loc[(vie_abr[1] == 22)]
+vie_abr23 = vie_abr.loc[(vie_abr[1] == 23)]
+vie_abr24 = vie_abr.loc[(vie_abr[1] == 24)]
 
-corr_abr_v = [N.corrcoef(vie_abr1[2],vie_abr1[6])[0, 1],N.corrcoef(vie_abr2[2],vie_abr2[6])[0, 1],N.corrcoef(vie_abr3[2],vie_abr3[6])[0, 1],N.corrcoef(vie_abr4[2],vie_abr4[6])[0, 1],N.corrcoef(vie_abr5[2],vie_abr5[6])[0, 1]
-,N.corrcoef(vie_abr6[2],vie_abr6[6])[0, 1],N.corrcoef(vie_abr7[2],vie_abr7[6])[0, 1],N.corrcoef(vie_abr8[2],vie_abr8[6])[0, 1],N.corrcoef(vie_abr9[2],vie_abr9[6])[0, 1],N.corrcoef(vie_abr10[2],vie_abr10[6])[0, 1]
-,N.corrcoef(vie_abr11[2],vie_abr11[6])[0, 1],N.corrcoef(vie_abr12[2],vie_abr12[6])[0, 1],N.corrcoef(vie_abr13[2],vie_abr13[6])[0, 1],N.corrcoef(vie_abr14[2],vie_abr14[6])[0, 1],N.corrcoef(vie_abr15[2],vie_abr15[6])[0, 1]
-,N.corrcoef(vie_abr16[2],vie_abr16[6])[0, 1],N.corrcoef(vie_abr17[2],vie_abr17[6])[0, 1],N.corrcoef(vie_abr18[2],vie_abr18[6])[0, 1],N.corrcoef(vie_abr19[2],vie_abr19[6])[0, 1],N.corrcoef(vie_abr20[2],vie_abr20[6])[0, 1]
-,N.corrcoef(vie_abr21[2],vie_abr21[6])[0, 1],N.corrcoef(vie_abr22[2],vie_abr22[6])[0, 1],N.corrcoef(vie_abr23[2],vie_abr23[6])[0, 1],N.corrcoef(vie_abr24[2],vie_abr24[6])[0, 1]]
-
+corr_abr_v = [N.corrcoef(vie_abr1[3],vie_abr1[13])[0, 1],N.corrcoef(vie_abr2[3],vie_abr2[13])[0, 1],N.corrcoef(vie_abr3[3],vie_abr3[13])[0, 1],N.corrcoef(vie_abr4[3],vie_abr4[13])[0, 1],N.corrcoef(vie_abr5[3],vie_abr5[13])[0, 1]
+,N.corrcoef(vie_abr6[3],vie_abr6[13])[0, 1],N.corrcoef(vie_abr7[3],vie_abr7[13])[0, 1],N.corrcoef(vie_abr8[3],vie_abr8[13])[0, 1],N.corrcoef(vie_abr9[3],vie_abr9[13])[0, 1],N.corrcoef(vie_abr10[3],vie_abr10[13])[0, 1]
+,N.corrcoef(vie_abr11[3],vie_abr11[13])[0, 1],N.corrcoef(vie_abr12[3],vie_abr12[13])[0, 1],N.corrcoef(vie_abr13[3],vie_abr13[13])[0, 1],N.corrcoef(vie_abr14[3],vie_abr14[13])[0, 1],N.corrcoef(vie_abr15[3],vie_abr15[13])[0, 1]
+,N.corrcoef(vie_abr16[3],vie_abr16[13])[0, 1],N.corrcoef(vie_abr17[3],vie_abr17[13])[0, 1],N.corrcoef(vie_abr18[3],vie_abr18[13])[0, 1],N.corrcoef(vie_abr19[3],vie_abr19[13])[0, 1],N.corrcoef(vie_abr20[3],vie_abr20[13])[0, 1]
+,N.corrcoef(vie_abr21[3],vie_abr21[13])[0, 1],N.corrcoef(vie_abr22[3],vie_abr22[13])[0, 1],N.corrcoef(vie_abr23[3],vie_abr23[13])[0, 1],N.corrcoef(vie_abr24[3],vie_abr24[13])[0, 1]]
+print(corr_abr_v)
 # julio
 vie_jul = vie[vie.index.month == 7]
-vie_jul1 = vie_jul.loc[(vie_jul[0] == 1)]
-vie_jul2 = vie_jul.loc[(vie_jul[0] == 2)]
-vie_jul3 = vie_jul.loc[(vie_jul[0] == 3)]
-vie_jul4 = vie_jul.loc[(vie_jul[0] == 4)]
-vie_jul5 = vie_jul.loc[(vie_jul[0] == 5)]
-vie_jul6 = vie_jul.loc[(vie_jul[0] == 6)]
-vie_jul7 = vie_jul.loc[(vie_jul[0] == 7)]
-vie_jul8 = vie_jul.loc[(vie_jul[0] == 8)]
-vie_jul9 = vie_jul.loc[(vie_jul[0] == 9)]
-vie_jul10 = vie_jul.loc[(vie_jul[0] == 10)]
-vie_jul11 = vie_jul.loc[(vie_jul[0] == 11)]
-vie_jul12 = vie_jul.loc[(vie_jul[0] == 12)]
-vie_jul13 = vie_jul.loc[(vie_jul[0] == 13)]
-vie_jul14 = vie_jul.loc[(vie_jul[0] == 14)]
-vie_jul15 = vie_jul.loc[(vie_jul[0] == 15)]
-vie_jul16 = vie_jul.loc[(vie_jul[0] == 16)]
-vie_jul17 = vie_jul.loc[(vie_jul[0] == 17)]
-vie_jul18 = vie_jul.loc[(vie_jul[0] == 18)]
-vie_jul19 = vie_jul.loc[(vie_jul[0] == 19)]
-vie_jul20 = vie_jul.loc[(vie_jul[0] == 20)]
-vie_jul21 = vie_jul.loc[(vie_jul[0] == 21)]
-vie_jul22 = vie_jul.loc[(vie_jul[0] == 22)]
-vie_jul23 = vie_jul.loc[(vie_jul[0] == 23)]
-vie_jul24 = vie_jul.loc[(vie_jul[0] == 24)]
+vie_jul1 = vie_jul.loc[(vie_jul[1] == 1)]
+vie_jul2 = vie_jul.loc[(vie_jul[1] == 2)]
+vie_jul3 = vie_jul.loc[(vie_jul[1] == 3)]
+vie_jul4 = vie_jul.loc[(vie_jul[1] == 4)]
+vie_jul5 = vie_jul.loc[(vie_jul[1] == 5)]
+vie_jul6 = vie_jul.loc[(vie_jul[1] == 6)]
+vie_jul7 = vie_jul.loc[(vie_jul[1] == 7)]
+vie_jul8 = vie_jul.loc[(vie_jul[1] == 8)]
+vie_jul9 = vie_jul.loc[(vie_jul[1] == 9)]
+vie_jul10 = vie_jul.loc[(vie_jul[1] == 10)]
+vie_jul11 = vie_jul.loc[(vie_jul[1] == 11)]
+vie_jul12 = vie_jul.loc[(vie_jul[1] == 12)]
+vie_jul13 = vie_jul.loc[(vie_jul[1] == 13)]
+vie_jul14 = vie_jul.loc[(vie_jul[1] == 14)]
+vie_jul15 = vie_jul.loc[(vie_jul[1] == 15)]
+vie_jul16 = vie_jul.loc[(vie_jul[1] == 16)]
+vie_jul17 = vie_jul.loc[(vie_jul[1] == 17)]
+vie_jul18 = vie_jul.loc[(vie_jul[1] == 18)]
+vie_jul19 = vie_jul.loc[(vie_jul[1] == 19)]
+vie_jul20 = vie_jul.loc[(vie_jul[1] == 20)]
+vie_jul21 = vie_jul.loc[(vie_jul[1] == 21)]
+vie_jul22 = vie_jul.loc[(vie_jul[1] == 22)]
+vie_jul23 = vie_jul.loc[(vie_jul[1] == 23)]
+vie_jul24 = vie_jul.loc[(vie_jul[1] == 24)]
 
-corr_jul_v = [N.corrcoef(vie_jul1[2],vie_jul1[6])[0, 1],N.corrcoef(vie_jul2[2],vie_jul2[6])[0, 1],N.corrcoef(vie_jul3[2],vie_jul3[6])[0, 1],N.corrcoef(vie_jul4[2],vie_jul4[6])[0, 1],N.corrcoef(vie_jul5[2],vie_jul5[6])[0, 1]
-,N.corrcoef(vie_jul6[2],vie_jul6[6])[0, 1],N.corrcoef(vie_jul7[2],vie_jul7[6])[0, 1],N.corrcoef(vie_jul8[2],vie_jul8[6])[0, 1],N.corrcoef(vie_jul9[2],vie_jul9[6])[0, 1],N.corrcoef(vie_jul10[2],vie_jul10[6])[0, 1]
-,N.corrcoef(vie_jul11[2],vie_jul11[6])[0, 1],N.corrcoef(vie_jul12[2],vie_jul12[6])[0, 1],N.corrcoef(vie_jul13[2],vie_jul13[6])[0, 1],N.corrcoef(vie_jul14[2],vie_jul14[6])[0, 1],N.corrcoef(vie_jul15[2],vie_jul15[6])[0, 1]
-,N.corrcoef(vie_jul16[2],vie_jul16[6])[0, 1],N.corrcoef(vie_jul17[2],vie_jul17[6])[0, 1],N.corrcoef(vie_jul18[2],vie_jul18[6])[0, 1],N.corrcoef(vie_jul19[2],vie_jul19[6])[0, 1],N.corrcoef(vie_jul20[2],vie_jul20[6])[0, 1]
-,N.corrcoef(vie_jul21[2],vie_jul21[6])[0, 1],N.corrcoef(vie_jul22[2],vie_jul22[6])[0, 1],N.corrcoef(vie_jul23[2],vie_jul23[6])[0, 1],N.corrcoef(vie_jul24[2],vie_jul24[6])[0, 1]]
+corr_jul_v = [N.corrcoef(vie_jul1[3],vie_jul1[13])[0, 1],N.corrcoef(vie_jul2[3],vie_jul2[13])[0, 1],N.corrcoef(vie_jul3[3],vie_jul3[13])[0, 1],N.corrcoef(vie_jul4[3],vie_jul4[13])[0, 1],N.corrcoef(vie_jul5[3],vie_jul5[13])[0, 1]
+,N.corrcoef(vie_jul6[3],vie_jul6[13])[0, 1],N.corrcoef(vie_jul7[3],vie_jul7[13])[0, 1],N.corrcoef(vie_jul8[3],vie_jul8[13])[0, 1],N.corrcoef(vie_jul9[3],vie_jul9[13])[0, 1],N.corrcoef(vie_jul10[3],vie_jul10[13])[0, 1]
+,N.corrcoef(vie_jul11[3],vie_jul11[13])[0, 1],N.corrcoef(vie_jul12[3],vie_jul12[13])[0, 1],N.corrcoef(vie_jul13[3],vie_jul13[13])[0, 1],N.corrcoef(vie_jul14[3],vie_jul14[13])[0, 1],N.corrcoef(vie_jul15[3],vie_jul15[13])[0, 1]
+,N.corrcoef(vie_jul16[3],vie_jul16[13])[0, 1],N.corrcoef(vie_jul17[3],vie_jul17[13])[0, 1],N.corrcoef(vie_jul18[3],vie_jul18[13])[0, 1],N.corrcoef(vie_jul19[3],vie_jul19[13])[0, 1],N.corrcoef(vie_jul20[3],vie_jul20[13])[0, 1]
+,N.corrcoef(vie_jul21[3],vie_jul21[13])[0, 1],N.corrcoef(vie_jul22[3],vie_jul22[13])[0, 1],N.corrcoef(vie_jul23[3],vie_jul23[13])[0, 1],N.corrcoef(vie_jul24[3],vie_jul24[13])[0, 1]]
 
 # octubre
 vie_oct = vie[vie.index.month == 10]
-vie_oct1 = vie_oct.loc[(vie_oct[0] == 1)]
-vie_oct2 = vie_oct.loc[(vie_oct[0] == 2)]
-vie_oct3 = vie_oct.loc[(vie_oct[0] == 3)]
-vie_oct4 = vie_oct.loc[(vie_oct[0] == 4)]
-vie_oct5 = vie_oct.loc[(vie_oct[0] == 5)]
-vie_oct6 = vie_oct.loc[(vie_oct[0] == 6)]
-vie_oct7 = vie_oct.loc[(vie_oct[0] == 7)]
-vie_oct8 = vie_oct.loc[(vie_oct[0] == 8)]
-vie_oct9 = vie_oct.loc[(vie_oct[0] == 9)]
-vie_oct10 = vie_oct.loc[(vie_oct[0] == 10)]
-vie_oct11 = vie_oct.loc[(vie_oct[0] == 11)]
-vie_oct12 = vie_oct.loc[(vie_oct[0] == 12)]
-vie_oct13 = vie_oct.loc[(vie_oct[0] == 13)]
-vie_oct14 = vie_oct.loc[(vie_oct[0] == 14)]
-vie_oct15 = vie_oct.loc[(vie_oct[0] == 15)]
-vie_oct16 = vie_oct.loc[(vie_oct[0] == 16)]
-vie_oct17 = vie_oct.loc[(vie_oct[0] == 17)]
-vie_oct18 = vie_oct.loc[(vie_oct[0] == 18)]
-vie_oct19 = vie_oct.loc[(vie_oct[0] == 19)]
-vie_oct20 = vie_oct.loc[(vie_oct[0] == 20)]
-vie_oct21 = vie_oct.loc[(vie_oct[0] == 21)]
-vie_oct22 = vie_oct.loc[(vie_oct[0] == 22)]
-vie_oct23 = vie_oct.loc[(vie_oct[0] == 23)]
-vie_oct24 = vie_oct.loc[(vie_oct[0] == 24)]
+vie_oct1 = vie_oct.loc[(vie_oct[1] == 1)]
+vie_oct2 = vie_oct.loc[(vie_oct[1] == 2)]
+vie_oct3 = vie_oct.loc[(vie_oct[1] == 3)]
+vie_oct4 = vie_oct.loc[(vie_oct[1] == 4)]
+vie_oct5 = vie_oct.loc[(vie_oct[1] == 5)]
+vie_oct6 = vie_oct.loc[(vie_oct[1] == 6)]
+vie_oct7 = vie_oct.loc[(vie_oct[1] == 7)]
+vie_oct8 = vie_oct.loc[(vie_oct[1] == 8)]
+vie_oct9 = vie_oct.loc[(vie_oct[1] == 9)]
+vie_oct10 = vie_oct.loc[(vie_oct[1] == 10)]
+vie_oct11 = vie_oct.loc[(vie_oct[1] == 11)]
+vie_oct12 = vie_oct.loc[(vie_oct[1] == 12)]
+vie_oct13 = vie_oct.loc[(vie_oct[1] == 13)]
+vie_oct14 = vie_oct.loc[(vie_oct[1] == 14)]
+vie_oct15 = vie_oct.loc[(vie_oct[1] == 15)]
+vie_oct16 = vie_oct.loc[(vie_oct[1] == 16)]
+vie_oct17 = vie_oct.loc[(vie_oct[1] == 17)]
+vie_oct18 = vie_oct.loc[(vie_oct[1] == 18)]
+vie_oct19 = vie_oct.loc[(vie_oct[1] == 19)]
+vie_oct20 = vie_oct.loc[(vie_oct[1] == 20)]
+vie_oct21 = vie_oct.loc[(vie_oct[1] == 21)]
+vie_oct22 = vie_oct.loc[(vie_oct[1] == 22)]
+vie_oct23 = vie_oct.loc[(vie_oct[1] == 23)]
+vie_oct24 = vie_oct.loc[(vie_oct[1] == 24)]
 
-corr_oct_v = [N.corrcoef(vie_oct1[2],vie_oct1[6])[0, 1],N.corrcoef(vie_oct2[2],vie_oct2[6])[0, 1],N.corrcoef(vie_oct3[2],vie_oct3[6])[0, 1],N.corrcoef(vie_oct4[2],vie_oct4[6])[0, 1],N.corrcoef(vie_oct5[2],vie_oct5[6])[0, 1]
-,N.corrcoef(vie_oct6[2],vie_oct6[6])[0, 1],N.corrcoef(vie_oct7[2],vie_oct7[6])[0, 1],N.corrcoef(vie_oct8[2],vie_oct8[6])[0, 1],N.corrcoef(vie_oct9[2],vie_oct9[6])[0, 1],N.corrcoef(vie_oct10[2],vie_oct10[6])[0, 1]
-,N.corrcoef(vie_oct11[2],vie_oct11[6])[0, 1],N.corrcoef(vie_oct12[2],vie_oct12[6])[0, 1],N.corrcoef(vie_oct13[2],vie_oct13[6])[0, 1],N.corrcoef(vie_oct14[2],vie_oct14[6])[0, 1],N.corrcoef(vie_oct15[2],vie_oct15[6])[0, 1]
-,N.corrcoef(vie_oct16[2],vie_oct16[6])[0, 1],N.corrcoef(vie_oct17[2],vie_oct17[6])[0, 1],N.corrcoef(vie_oct18[2],vie_oct18[6])[0, 1],N.corrcoef(vie_oct19[2],vie_oct19[6])[0, 1],N.corrcoef(vie_oct20[2],vie_oct20[6])[0, 1]
-,N.corrcoef(vie_oct21[2],vie_oct21[6])[0, 1],N.corrcoef(vie_oct22[2],vie_oct22[6])[0, 1],N.corrcoef(vie_oct23[2],vie_oct23[6])[0, 1],N.corrcoef(vie_oct24[2],vie_oct24[6])[0, 1]]
+corr_oct_v = [N.corrcoef(vie_oct1[3],vie_oct1[13])[0, 1],N.corrcoef(vie_oct2[3],vie_oct2[13])[0, 1],N.corrcoef(vie_oct3[3],vie_oct3[13])[0, 1],N.corrcoef(vie_oct4[3],vie_oct4[13])[0, 1],N.corrcoef(vie_oct5[3],vie_oct5[13])[0, 1]
+,N.corrcoef(vie_oct6[3],vie_oct6[13])[0, 1],N.corrcoef(vie_oct7[3],vie_oct7[13])[0, 1],N.corrcoef(vie_oct8[3],vie_oct8[13])[0, 1],N.corrcoef(vie_oct9[3],vie_oct9[13])[0, 1],N.corrcoef(vie_oct10[3],vie_oct10[13])[0, 1]
+,N.corrcoef(vie_oct11[3],vie_oct11[13])[0, 1],N.corrcoef(vie_oct12[3],vie_oct12[13])[0, 1],N.corrcoef(vie_oct13[3],vie_oct13[13])[0, 1],N.corrcoef(vie_oct14[3],vie_oct14[13])[0, 1],N.corrcoef(vie_oct15[3],vie_oct15[13])[0, 1]
+,N.corrcoef(vie_oct16[3],vie_oct16[13])[0, 1],N.corrcoef(vie_oct17[3],vie_oct17[13])[0, 1],N.corrcoef(vie_oct18[3],vie_oct18[13])[0, 1],N.corrcoef(vie_oct19[3],vie_oct19[13])[0, 1],N.corrcoef(vie_oct20[3],vie_oct20[13])[0, 1]
+,N.corrcoef(vie_oct21[3],vie_oct21[13])[0, 1],N.corrcoef(vie_oct22[3],vie_oct22[13])[0, 1],N.corrcoef(vie_oct23[3],vie_oct23[13])[0, 1],N.corrcoef(vie_oct24[3],vie_oct24[13])[0, 1]]
 
 
 # diciembre
 vie_dic = vie[vie.index.month == 12]
-vie_dic1 = vie_dic.loc[(vie_dic[0] == 1)]
-vie_dic2 = vie_dic.loc[(vie_dic[0] == 2)]
-vie_dic3 = vie_dic.loc[(vie_dic[0] == 3)]
-vie_dic4 = vie_dic.loc[(vie_dic[0] == 4)]
-vie_dic5 = vie_dic.loc[(vie_dic[0] == 5)]
-vie_dic6 = vie_dic.loc[(vie_dic[0] == 6)]
-vie_dic7 = vie_dic.loc[(vie_dic[0] == 7)]
-vie_dic8 = vie_dic.loc[(vie_dic[0] == 8)]
-vie_dic9 = vie_dic.loc[(vie_dic[0] == 9)]
-vie_dic10 = vie_dic.loc[(vie_dic[0] == 10)]
-vie_dic11 = vie_dic.loc[(vie_dic[0] == 11)]
-vie_dic12 = vie_dic.loc[(vie_dic[0] == 12)]
-vie_dic13 = vie_dic.loc[(vie_dic[0] == 13)]
-vie_dic14 = vie_dic.loc[(vie_dic[0] == 14)]
-vie_dic15 = vie_dic.loc[(vie_dic[0] == 15)]
-vie_dic16 = vie_dic.loc[(vie_dic[0] == 16)]
-vie_dic17 = vie_dic.loc[(vie_dic[0] == 17)]
-vie_dic18 = vie_dic.loc[(vie_dic[0] == 18)]
-vie_dic19 = vie_dic.loc[(vie_dic[0] == 19)]
-vie_dic20 = vie_dic.loc[(vie_dic[0] == 20)]
-vie_dic21 = vie_dic.loc[(vie_dic[0] == 21)]
-vie_dic22 = vie_dic.loc[(vie_dic[0] == 22)]
-vie_dic23 = vie_dic.loc[(vie_dic[0] == 23)]
-vie_dic24 = vie_dic.loc[(vie_dic[0] == 24)]
+vie_dic1 = vie_dic.loc[(vie_dic[1] == 1)]
+vie_dic2 = vie_dic.loc[(vie_dic[1] == 2)]
+vie_dic3 = vie_dic.loc[(vie_dic[1] == 3)]
+vie_dic4 = vie_dic.loc[(vie_dic[1] == 4)]
+vie_dic5 = vie_dic.loc[(vie_dic[1] == 5)]
+vie_dic6 = vie_dic.loc[(vie_dic[1] == 6)]
+vie_dic7 = vie_dic.loc[(vie_dic[1] == 7)]
+vie_dic8 = vie_dic.loc[(vie_dic[1] == 8)]
+vie_dic9 = vie_dic.loc[(vie_dic[1] == 9)]
+vie_dic10 = vie_dic.loc[(vie_dic[1] == 10)]
+vie_dic11 = vie_dic.loc[(vie_dic[1] == 11)]
+vie_dic12 = vie_dic.loc[(vie_dic[1] == 12)]
+vie_dic13 = vie_dic.loc[(vie_dic[1] == 13)]
+vie_dic14 = vie_dic.loc[(vie_dic[1] == 14)]
+vie_dic15 = vie_dic.loc[(vie_dic[1] == 15)]
+vie_dic16 = vie_dic.loc[(vie_dic[1] == 16)]
+vie_dic17 = vie_dic.loc[(vie_dic[1] == 17)]
+vie_dic18 = vie_dic.loc[(vie_dic[1] == 18)]
+vie_dic19 = vie_dic.loc[(vie_dic[1] == 19)]
+vie_dic20 = vie_dic.loc[(vie_dic[1] == 20)]
+vie_dic21 = vie_dic.loc[(vie_dic[1] == 21)]
+vie_dic22 = vie_dic.loc[(vie_dic[1] == 22)]
+vie_dic23 = vie_dic.loc[(vie_dic[1] == 23)]
+vie_dic24 = vie_dic.loc[(vie_dic[1] == 24)]
 
-corr_dic_v = [N.corrcoef(vie_dic1[2],vie_dic1[6])[0, 1],N.corrcoef(vie_dic2[2],vie_dic2[6])[0, 1],N.corrcoef(vie_dic3[2],vie_dic3[6])[0, 1],N.corrcoef(vie_dic4[2],vie_dic4[6])[0, 1],N.corrcoef(vie_dic5[2],vie_dic5[6])[0, 1]
-,N.corrcoef(vie_dic6[2],vie_dic6[6])[0, 1],N.corrcoef(vie_dic7[2],vie_dic7[6])[0, 1],N.corrcoef(vie_dic8[2],vie_dic8[6])[0, 1],N.corrcoef(vie_dic9[2],vie_dic9[6])[0, 1],N.corrcoef(vie_dic10[2],vie_dic10[6])[0, 1]
-,N.corrcoef(vie_dic11[2],vie_dic11[6])[0, 1],N.corrcoef(vie_dic12[2],vie_dic12[6])[0, 1],N.corrcoef(vie_dic13[2],vie_dic13[6])[0, 1],N.corrcoef(vie_dic14[2],vie_dic14[6])[0, 1],N.corrcoef(vie_dic15[2],vie_dic15[6])[0, 1]
-,N.corrcoef(vie_dic16[2],vie_dic16[6])[0, 1],N.corrcoef(vie_dic17[2],vie_dic17[6])[0, 1],N.corrcoef(vie_dic18[2],vie_dic18[6])[0, 1],N.corrcoef(vie_dic19[2],vie_dic19[6])[0, 1],N.corrcoef(vie_dic20[2],vie_dic20[6])[0, 1]
-,N.corrcoef(vie_dic21[2],vie_dic21[6])[0, 1],N.corrcoef(vie_dic22[2],vie_dic22[6])[0, 1],N.corrcoef(vie_dic23[2],vie_dic23[6])[0, 1],N.corrcoef(vie_dic24[2],vie_dic24[6])[0, 1]]
-
+corr_dic_v = [N.corrcoef(vie_dic1[3],vie_dic1[13])[0, 1],N.corrcoef(vie_dic2[3],vie_dic2[13])[0, 1],N.corrcoef(vie_dic3[3],vie_dic3[13])[0, 1],N.corrcoef(vie_dic4[3],vie_dic4[13])[0, 1],N.corrcoef(vie_dic5[3],vie_dic5[13])[0, 1]
+,N.corrcoef(vie_dic6[3],vie_dic6[13])[0, 1],N.corrcoef(vie_dic7[3],vie_dic7[13])[0, 1],N.corrcoef(vie_dic8[3],vie_dic8[13])[0, 1],N.corrcoef(vie_dic9[3],vie_dic9[13])[0, 1],N.corrcoef(vie_dic10[3],vie_dic10[13])[0, 1]
+,N.corrcoef(vie_dic11[3],vie_dic11[13])[0, 1],N.corrcoef(vie_dic12[3],vie_dic12[13])[0, 1],N.corrcoef(vie_dic13[3],vie_dic13[13])[0, 1],N.corrcoef(vie_dic14[3],vie_dic14[13])[0, 1],N.corrcoef(vie_dic15[3],vie_dic15[13])[0, 1]
+,N.corrcoef(vie_dic16[3],vie_dic16[13])[0, 1],N.corrcoef(vie_dic17[3],vie_dic17[13])[0, 1],N.corrcoef(vie_dic18[3],vie_dic18[13])[0, 1],N.corrcoef(vie_dic19[3],vie_dic19[13])[0, 1],N.corrcoef(vie_dic20[3],vie_dic20[13])[0, 1]
+,N.corrcoef(vie_dic21[3],vie_dic21[13])[0, 1],N.corrcoef(vie_dic22[3],vie_dic22[13])[0, 1],N.corrcoef(vie_dic23[3],vie_dic23[13])[0, 1],N.corrcoef(vie_dic24[3],vie_dic24[13])[0, 1]]
+print(corr_dic_v)
 fig, ((ax1,ax2,ax3),(ax4,ax5,ax6),(ax7,ax8,ax9),(ax10,ax11,ax12)) = plt.subplots(4, 3,figsize=(6,6.4), sharex=True, sharey=True)
 
 ax1.bar(horas, corr_abr_t, width=1, edgecolor="white", linewidth=0.7 , alpha = 0.8, color="tomato" )
@@ -457,6 +460,8 @@ ax1.set_yticks([-0.5, 0, 0.5])
 ax1.xaxis.set_tick_params(labelsize=0, color='white')
 # ~ ax1.text(0.5, 0.5, 'abril', fontsize=15)
 ax1.axhline(linewidth=1, color='black')
+ax1.axhline(y=0.274,linewidth=0.75, color='black',ls =  '--')
+ax1.axhline(y=-0.274,linewidth=0.75, color='black',ls =  '--')
 ax1.set_title('temperatura', fontsize=16, color="tomato")
 
 ax4.bar(horas, corr_jul_t, width=1, edgecolor="white", linewidth=0.7, alpha = 0.8, color="tomato" )
@@ -466,6 +471,8 @@ ax4.set_yticks([-0.5, 0, 0.5])
 ax4.xaxis.set_tick_params(labelsize=0, color='white')
 # ~ ax4.text(0.5, 0.5, 'julio', fontsize=15)
 ax4.axhline(linewidth=1, color='black')
+ax4.axhline(y=0.274,linewidth=0.75, color='black',ls =  '--')
+ax4.axhline(y=-0.274,linewidth=0.75, color='black',ls =  '--')
 
 ax7.bar(horas, corr_oct_t, width=1, edgecolor="white", linewidth=0.7, alpha = 0.8 , color="tomato" )
 ax7.tick_params(axis='y', labelsize=16)
@@ -474,6 +481,8 @@ ax7.set_yticks([-0.5, 0, 0.5])
 ax7.xaxis.set_tick_params(labelsize=0, color='white')
 # ~ ax7.text(0.5, -0.6, 'octubre', fontsize=16)
 ax7.axhline(linewidth=1, color='black')
+ax7.axhline(y=0.274,linewidth=0.75, color='black',ls =  '--')
+ax7.axhline(y=-0.274,linewidth=0.75, color='black',ls =  '--')
 
 ax10.bar(horas, corr_dic_t, width=1, edgecolor="white", linewidth=0.7 , alpha = 0.8, color="tomato" )
 ax10.tick_params(axis='y', labelsize=15)
@@ -482,6 +491,8 @@ ax10.set_ylim(-1,1)
 ax10.set_yticks([-0.5, 0, 0.5]) 
 # ~ ax10.text(0.5, -0.6, 'diciembre', fontsize=15)
 ax10.axhline(linewidth=1, color='black')
+ax10.axhline(y=0.274,linewidth=0.75, color='black',ls =  '--')
+ax10.axhline(y=-0.274,linewidth=0.75, color='black',ls =  '--')
 
 ax2.bar(horas, corr_abr_n, width=1, edgecolor="white", linewidth=0.7 , alpha = 0.8, color="dimgray")
 ax2.tick_params(axis='y', labelsize=15)
@@ -490,6 +501,8 @@ ax2.set_yticks([-0.5, 0, 0.5])
 ax2.xaxis.set_tick_params(labelsize=0, color='white')
 # ~ ax2.text(0.5, 0.5, 'abril', fontsize=15)
 ax2.axhline(linewidth=1, color='black')
+ax2.axhline(y=0.274,linewidth=0.75, color='black',ls =  '--')
+ax2.axhline(y=-0.274,linewidth=0.75, color='black',ls =  '--')
 ax2.set_title('nubosidad', fontsize=16, color="dimgray")
 
 ax5.bar(horas, corr_jul_n, width=1, edgecolor="white", linewidth=0.7, alpha = 0.8, color="dimgray")
@@ -499,6 +512,8 @@ ax5.set_yticks([-0.5, 0, 0.5])
 ax5.xaxis.set_tick_params(labelsize=0, color='white')
 # ~ ax5.text(0.5, 0.5, 'julio', fontsize=15)
 ax5.axhline(linewidth=1, color='black')
+ax5.axhline(y=0.274,linewidth=0.75, color='black',ls =  '--')
+ax5.axhline(y=-0.274,linewidth=0.75, color='black',ls =  '--')
 
 ax8.bar(horas, corr_oct_n, width=1, edgecolor="white", linewidth=0.7, alpha = 0.8, color="dimgray" )
 ax8.tick_params(axis='y', labelsize=16)
@@ -507,6 +522,8 @@ ax8.set_yticks([-0.5, 0, 0.5])
 ax8.xaxis.set_tick_params(labelsize=0, color='white')
 # ~ ax8.text(0.5, -0.6, 'octubre', fontsize=16)
 ax8.axhline(linewidth=1, color='black')
+ax8.axhline(y=0.274,linewidth=0.75, color='black',ls =  '--')
+ax8.axhline(y=-0.274,linewidth=0.75, color='black',ls =  '--')
 
 ax11.bar(horas, corr_dic_n, width=1, edgecolor="white", linewidth=0.7 , alpha = 0.8, color="dimgray")
 ax11.tick_params(axis='y', labelsize=15)
@@ -515,39 +532,8 @@ ax11.set_ylim(-1,1)
 ax11.set_yticks([-0.5, 0, 0.5]) 
 # ~ ax11.text(0.5, -0.6, 'diciembre', fontsize=15)
 ax11.axhline(linewidth=1, color='black')
-
-ax2.bar(horas, corr_abr_n, width=1, edgecolor="white", linewidth=0.7 , alpha = 0.8, color="dimgray")
-ax2.tick_params(axis='y', labelsize=15)
-ax2.set_ylim(-1,1)
-ax2.set_yticks([-0.5, 0, 0.5]) 
-ax2.xaxis.set_tick_params(labelsize=0, color='white')
-# ~ ax2.text(0.5, 0.5, 'abril', fontsize=15)
-ax2.axhline(linewidth=1, color='black')
-ax2.set_title('nubosidad', fontsize=16, color="dimgray")
-
-ax5.bar(horas, corr_jul_n, width=1, edgecolor="white", linewidth=0.7, alpha = 0.8, color="dimgray")
-ax5.tick_params(axis='y', labelsize=15)
-ax5.set_ylim(-1,1)
-ax5.set_yticks([-0.5, 0, 0.5]) 
-ax5.xaxis.set_tick_params(labelsize=0, color='white')
-# ~ ax5.text(0.5, 0.5, 'julio', fontsize=15)
-ax5.axhline(linewidth=1, color='black')
-
-ax8.bar(horas, corr_oct_n, width=1, edgecolor="white", linewidth=0.7, alpha = 0.8, color="dimgray" )
-ax8.tick_params(axis='y', labelsize=16)
-ax8.set_ylim(-1,1)
-ax8.set_yticks([-0.5, 0, 0.5]) 
-ax8.xaxis.set_tick_params(labelsize=0, color='white')
-# ~ ax8.text(0.5, -0.6, 'octubre', fontsize=16)
-ax8.axhline(linewidth=1, color='black')
-
-ax11.bar(horas, corr_dic_n, width=1, edgecolor="white", linewidth=0.7 , alpha = 0.8, color="dimgray")
-ax11.tick_params(axis='y', labelsize=15)
-ax11.tick_params(axis='x', labelsize=15,labelrotation = 90)
-ax11.set_ylim(-1,1)
-ax11.set_yticks([-0.5, 0, 0.5]) 
-# ~ ax11.text(0.5, -0.6, 'diciembre', fontsize=15)
-ax11.axhline(linewidth=1, color='black')
+ax11.axhline(y=0.274,linewidth=0.75, color='black',ls =  '--')
+ax11.axhline(y=-0.274,linewidth=0.75, color='black',ls =  '--')
 
 ax3.bar(horas, corr_abr_v, width=1, edgecolor="white", linewidth=0.7 , alpha = 0.8, color="green")
 ax3.tick_params(axis='y', labelsize=15)
@@ -556,6 +542,8 @@ ax3.set_yticks([-0.5, 0, 0.5])
 ax3.xaxis.set_tick_params(labelsize=0, color='white')
 # ~ ax3.text(0.5, 0.5, 'abril', fontsize=15)
 ax3.axhline(linewidth=1, color='black')
+ax3.axhline(y=0.274,linewidth=0.75, color='black',ls =  '--')
+ax3.axhline(y=-0.274,linewidth=0.75, color='black',ls =  '--')
 ax3.set_title('vel. viento', fontsize=16, color="green")
 
 ax6.bar(horas, corr_jul_v, width=1, edgecolor="white", linewidth=0.7, alpha = 0.8, color="green")
@@ -565,6 +553,8 @@ ax6.set_yticks([-0.5, 0, 0.5])
 ax6.xaxis.set_tick_params(labelsize=0, color='white')
 # ~ ax6.text(0.5, 0.5, 'julio', fontsize=15)
 ax6.axhline(linewidth=1, color='black')
+ax6.axhline(y=0.274,linewidth=0.75, color='black',ls =  '--')
+ax6.axhline(y=-0.274,linewidth=0.75, color='black',ls =  '--')
 
 ax9.bar(horas, corr_oct_v, width=1, edgecolor="white", linewidth=0.7, alpha = 0.8, color="green" )
 ax9.tick_params(axis='y', labelsize=15)
@@ -573,6 +563,8 @@ ax9.set_yticks([-0.5, 0, 0.5])
 ax9.xaxis.set_tick_params(labelsize=0, color='white')
 # ~ ax9.text(0.5, -0.6, 'octubre', fontsize=16)
 ax9.axhline(linewidth=1, color='black')
+ax9.axhline(y=0.274,linewidth=0.75, color='black',ls =  '--')
+ax9.axhline(y=-0.274,linewidth=0.75, color='black',ls =  '--')
 
 ax12.bar(horas, corr_dic_v, width=1, edgecolor="white", linewidth=0.7 , alpha = 0.8, color="green")
 ax12.tick_params(axis='y', labelsize=15)
@@ -581,7 +573,8 @@ ax12.set_ylim(-1,1)
 ax12.set_yticks([-0.5, 0, 0.5]) 
 # ~ ax12.text(0.5, -0.6, 'diciembre', fontsize=15)
 ax12.axhline(linewidth=1, color='black')
-
+ax12.axhline(y=0.274,linewidth=0.75, color='black',ls =  '--')
+ax12.axhline(y=-0.274,linewidth=0.75, color='black',ls =  '--')
 # ~ ax4.set_xticks([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24], ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24'])
 ax4.set_xticks([1,6,12,18,24], ['1','6','12','18','24'])
 

@@ -97,7 +97,12 @@ Luego, es necesario aislar la variabilidad de causa climática de la no-climáti
 
 \subsubsection{Escala intra-diaria}
 Para la escala temporal de corto plazo se trabajó con los datos horarios de demanda eléctrica del período 2021-2022-2023. Se consideraron cuatro meses del año representativos de las estaciones: diciembre para el verano, abril para el otoño, julio para el invierno y septiembre para la primavera. Solo se considero un mes de cada estación ya que la demanda eléctrica pesenta diferencias entre meses, por el marcado ciclo anual, y esas variaciones podrian interferir con el análisis. Se excluyeron del análisis los días feriados y de fines de semana por presentar menor demanda por cuestiones no-climáticas. Luego, para cada mes, se calcularon las correlaciones a nivel horario entre le demanda eléctrica y las variables temperatura del aire, cobertura nubosa y velocidad del viento.
-Se analizó, además, la influencia de variables meteorológicas en el empuntamiento diario de la demanda. Se define el empuntamiento como la diferencia entre los valores mínimo y máximo de demanda para cada día. Los parámetros meteorológicos elegidos fueron temperatura máxima diaria ($T_{max}$), temperatura mínima ($T_{min}$), temperatura promedio ($\bar{T}$), amplitud térmica ($\Delta T$), nubosidad promedio ($\bar{NUB}$), nubosidad nocturna ($NUB_{noct}$) y nubosidad diurna ($NUB_{diu}$)
+Se analizó, además, la influencia de variables meteorológicas en el empuntamiento diario de la demanda. Se define el empuntamiento como la diferencia entre los valores mínimo y máximo de demanda para cada día (figura \ref{ampli}). Los parámetros meteorológicos elegidos fueron temperatura máxima diaria ($T_{max}$), temperatura mínima ($T_{min}$), temperatura promedio ($\bar{T}$), amplitud térmica ($\Delta T$), nubosidad promedio ($\bar{NUB}$), nubosidad nocturna ($NUB_{noct}$) y nubosidad diurna ($NUB_{diu}$)
+
+\begin{figure}[H]
+	\includegraphics[clip,width=.6\columnwidth]{ampli.png}
+	\caption{\label{ampli} Empuntamiento diario de la demanda}
+\end{figure}
 
 \subsubsection{Escala intra-estacional}
 Para la escala temporal de mediano plazo (datos diarios) es necesario aislar la variabilidad propia de esta escala de variabilidad de más largo plazo, como pueden ser la diferencia entre diferentes años o las tendencias de largo plazo. Con este propósito se implementó el metodo de Cerne y Vera (\cite{cerne2011influence}) para aislar la variabilidad climática intra-estacional en una serie temporal: a cada valor diario tanto de demanda eléctrica como de las variables climáticas utilizadas se le substrajo el promedio diario climatologico (que responde al ciclo anual), y el desvio estacional (que responde a la anomalía climática de cada año en particular). Por ejemplo, la anomalía intraestacional de un año (a) y dia (d) particular en el trimestre de verano (DEF) es:
@@ -111,34 +116,45 @@ En esta escala temporal se analizó, además, la relación entre la demanda elé
 
 \subsubsection{Escala inter-anual}
 
-Para la escala temporal de largo plazo, en primera instancia se calcularon las sumas mensuales a partir de los datos diarios de demanda en el período 2006-2022. Luego se eliminó la tendencia de largo plazo restando la componente tendencial de la descomposición de Loess de series temporales \cite{cleveland1990stl}. Luego, se calcularon las sumas por trimestres (diciembre-enero-febrero, marzo-abril-mayo, junio-julio-agosto, septiembre-octubre-noviembre). En esta escala, al igual que en la escala intra-estacional, se analizó la influencia de factores climáticos tanto locales como fenómenos climáticos de gran escala en la demanda eléctrica. La variable local analizada fue la temperatura del aire, mientras que los fenómenos climáticos considerados fueron la AAO y la oscilación Niño/Niña. Ambos fenómenos son los principales moduladores de la variabilidad climática en la escala interanual en Sudamerica \cite{grimm2000climate,cai2020climate,garreaud2009present, silvestri2009nonstationary}. La relación entre la demanda eléctrica y las variables climáticas se analizó mediante el cálculo de coeficientes de correlación lineales y no lineales. Se realizó, además, un análisis de  tablas de contingencia. Para esto fue necesario segmentar tanto las series de variables climáticas y de demanda eléctrica. Las series de demanda y temperatura fueron segmentadas en terciles (T1,T2,T3), mientras que los índices de la AAO y el Niño fueron segmentado por fases: negativa, neutral y positiva para la AAO; fría, neutral, cálida para El Niño. Las tablas de contingencia permiten identificar co ocurrencia de eventos y asignar una significancia estadística a estos. Por ejemplo, se podria identificar si existe una tendencia (o no) a la ocurrencia de eventos de mayor demánda eléctrica durante los eventos cálidos del Niño.  
+Para la escala temporal de largo plazo, en primera instancia se calcularon las sumas mensuales a partir de los datos diarios de demanda en el período 2006-2022. Luego se eliminó la tendencia de largo plazo restando la componente tendencial de la descomposición de Loess de series temporales (figura \ref{loess}, \cite{cleveland1990stl}). Luego, se calcularon las sumas por trimestres (diciembre-enero-febrero, marzo-abril-mayo, junio-julio-agosto, septiembre-octubre-noviembre). En esta escala, al igual que en la escala intra-estacional, se analizó la influencia de factores climáticos tanto locales como fenómenos climáticos de gran escala en la demanda eléctrica. La variable local analizada fue la temperatura del aire, mientras que los fenómenos climáticos considerados fueron la AAO y la oscilación Niño/Niña. Ambos fenómenos son los principales moduladores de la variabilidad climática en la escala interanual en Sudamerica \cite{grimm2000climate,cai2020climate,garreaud2009present, silvestri2009nonstationary}. La relación entre la demanda eléctrica y las variables climáticas se analizó mediante el cálculo de coeficientes de correlación lineales y no lineales. Se realizó, además, un análisis de  tablas de contingencia. Para esto fue necesario segmentar tanto las series de variables climáticas y de demanda eléctrica. Las series de demanda y temperatura fueron segmentadas en terciles (T1,T2,T3), mientras que los índices de la AAO y el Niño fueron segmentado por fases: negativa, neutral y positiva para la AAO; fría, neutral, cálida para El Niño. Las tablas de contingencia permiten identificar co ocurrencia de eventos y asignar una significancia estadística a estos. Por ejemplo, se podria identificar si existe una tendencia (o no) a la ocurrencia de eventos de mayor demánda eléctrica durante los eventos cálidos del Niño.  
 
+\begin{figure}[H]
+	\includegraphics[clip,width=0.9\columnwidth]{decomp.png}
+	\caption{\label{loess} Descomposición de Loess de la serie de demanda diaria (a) en las componentes de tendencia (b), estacional (c) y residual (d)}
+\end{figure}
  
 
 \section{Resultados}
 
 \subsection{Descripción de demanda eléctrica}
+
+Como se mencionó en la sección anterior, en este trabajo se contó con una serie diaria de demanda eléctrica de 16 años, y una serie horaria de tres años. La demanda eléctrica muestra variabilidad en varias escalas (figura \ref{demanda}). Una tendencia de largo plazo creciente (panel a)), relacionada a crecimiento de la población, la eléctrificación y la actividad económica (\cite{detemperatura}). La actividad económica pareciera estar relacionada también a la variabilidad interabual de largo plazo: men la figura \ref{loess} b) se grafica la componente de tendencia de Loess junto con el Producto Bruto Interno a valores constantes). Se observa también un marcado ciclo anual (panel b) figura \ref{demanda}), con máximos asociados a la climatización estival e invernal (\cite{detemperatura}). La escala de tiempo de alrededor de una semana tambien muestra una marcada variabilidad tanto por factores meteorológicas de corto plazo, como por la merma en la actividad asociada a los fines de semana (panel c)). Finalmente se observa también la típica curva diaria que presenta, a su vez, diferencias estacionales: durante el invierno (curva violeta en figura \ref{demanda} d)) la demanda es mínima en horas de la madrugada, hay un máximo relativo alrededor de las 10:00, y un máximo absoluto alrededor de las 20:00, durante el verano (curva rosa), el máximo absoluto de demanda ocurre alrededor de las 15:00 debido al uso masivo de equipos de climatización. Luego, ocurre un máximo relativo alrededor de las 21:00.
+
 \begin{figure}[H]
 	\includegraphics[clip,width=.9\columnwidth]{multi.png}
-	\caption{\label{demanda} Serie diaria de demanda eléctrica (a), y escalas características de variabilidad (b, c y d)}
+	\caption{\label{demanda} Serie diaria de demanda eléctrica (a), y escalas características de variabilidad: anual (b), semanal (c) y diaria (d) - la curva violeta representa la demanda promedio de invierno, la curva rosa representa la demanda promedio de verano}
 \end{figure}
+
+Otra característica que se observa en la serie temporal de demanda es un aumento en el empuntamiento anual de la demanda. Esto significa que los valores máximos de demanda de invierno y verano aumentan en mayor proporción que la demanda de otros momentos del año. La figura \ref{aumento} muestra la diferencia entre los valores máximo y mínimo diario para cada año, y se puede observar una tendencia creciente hasta el año 2019 aproximadamente. Este efecto es conocido y se debe al aumento de usos de climatización (\cite{detemperatura}).
 
 \begin{figure}[H]
 	\includegraphics[clip,width=.4\columnwidth]{minmax.png}
 	\caption{\label{aumento} Diferencia anual entre maximo y mínimo absolutos de demanda diaria}
 \end{figure}
 
-\begin{figure}[H]
-	\includegraphics[clip,width=0.9\columnwidth]{decomp.png}
-	\caption{\label{loess} Descomposición de Loess de la serie de demanda diaria (a) en las componentes de tendencia (b), estacional (c) y residual (d)}
-\end{figure}
-
 \subsection{Escala intra-diaria}
 \subsubsection{Análisis horario}
+
+En esta sección se describen los resultados del análisis de correlación a nivel horario entre la demanda eléctrica y las variables temperatura, nubosidad y velocidad del viento. Como era de esperarse, la temperatura resultó ser la variables con correlaciones más fuertes (figura \ref{corr}). Se observan correlaciones negativas para el invierno y positivas para el verano (en todos casos significativas) independientemente del horario del dia considerado. Esto podría deberse a una alta autocolleralión en la variable temperatura a escala diaria. En las estaciones de transición el comportamiento resulta diferente. En otoño (mes de abril) las correlaciones son negativas en horas de la mañana. Esto podria deberse a un mayor requerimiento por calefacción en en momento del dia más frio y que comienza la actividad. Luego se observan correlaciones positivas entre el mediodia y la tarde. En esta epoca de transición, quizá todavía se requieren usos de refrigeración si las temperaturas son elevadas. La significancia estadística solo se alcanza en esta franja horaria. Luego las correlaciones vuelven a ser negativas hacia la noche, reflejando quizá el mismo efécto que en horas de la mañana. Para la primavera (mes de octubre), las correlaciones tienen un comportamiento parecido al mes de verano (correlaciones positivas), aunque la significancia estadística es menor.
+
+La variable nubosidad presenta en general correlaciones de una significancia menor a la temperatura. Para el otoño las correlaciones son pisotivas (mayor nubosidad/mayor demanda) durante todo el dia, pero principalmente en las horas cercanas al mediodia. Resulta dificil dilucidar si esta correlación se debe a cambios en los usos de iluminación o climatización. Durante el invierno se observan correlaciones negativas durante las horas nocturnas. Esto quizá pueda deberse a que a mayor cobertura nubosa menor es la perdida de calor radiativo y, por lo tanto, menor el descenso termico nocturno. Luego, son positivas en la franja horaria entre el mediodia y la tarde. En la primavera las correlaciones son muy bajas en todas las horas del dia. Finalmente para el verano se observan correlaciones negativas principalmente a partir del mediodia y en horas de la tarde, probablemente asociado a una menor radiación solar indicente en superficie y, por ende, menores temperaturas máximas. 
+
 \begin{figure}[H]
 	\includegraphics[clip,width=.7\columnwidth]{corr.jpg}
-	\caption{\label{corr} Coeficientes de correlación horarios entre demanda eléctrica y temperatura (columna izquierda) y  nubosidad (columna derecha)}
+	\caption{\label{corr} Coeficientes de correlación horarios entre demanda eléctrica y temperatura (columna izquierda) y nubosidad (columna derecha). Las líneas discontinuas indicas los valores de correlación estadísticamente significativos con un nivel de significancia de 0.05}
 \end{figure}
+
+La variable velocidad del viento muestra correlaciones aún más débiles y no significativas. Se pueden mencionar correlaciones positivas en horas de la tarde en invierno, quizá asociadas a un descenso de la sensación térmica y consiguiente aumento del requerimiento para calefacción. 
 
 \subsubsection{Análisis de empuntamiento diario}
 \begin{figure}[H]

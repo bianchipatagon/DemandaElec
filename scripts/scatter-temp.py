@@ -8,6 +8,7 @@ from scipy import stats
 from statsmodels.tsa.seasonal import STL
 import pickle
 from matplotlib import cm
+from scipy.stats import spearmanr
 
 
 ## demanda
@@ -116,8 +117,8 @@ kdeplot = sns.regplot(ax=ax1,x = float_tverA, y = float_dverA, scatter_kws = { "
 
 r = np.corrcoef(float_tverA, float_dverA)
 ax1.tick_params(labelsize=14)
-# ~ ax1.text(16.2, 520,'r=', fontsize=15)
-# ~ ax1.text(18.2, 520, round(r[0, 1], 2), fontsize=15)
+ax1.text(16.2, 520,'r=', fontsize=13)
+ax1.text(18.8, 520, round(r[0, 1], 2), fontsize=13)
 ax1.set_title('DEF', fontsize = 13)
 ax1.set_ylim(200, 570)
 ax1.set_ylabel('[MWh]', fontsize=15)
@@ -125,20 +126,19 @@ ax1.set_yticks([300,400,500])
 
 ##### oto
 kdeplot = sns.regplot(ax=ax2,x=float_totoA, y = float_dotoA, order=2, scatter_kws = {"alpha": 0.6, 's': 8}, line_kws = {"color": "black",'lw': 1}, ci= None, label=None)
-r = np.corrcoef(float_totoA, float_dotoA)
+# ~ r, p_value = speeearmanr(float_totoA, float_dotoA)
 ax2.tick_params(labelsize=14)
 ax2.set_title('MAM', fontsize = 13)
 
-# ~ ax2.text(-2.4, 185,'r=', fontsize=15)
-# ~ ax2.text(-1.8, 185, round(r[0, 1], 2), fontsize=15)
+# ~ ax2.texte, r, fontsize=15)
 ax2.set_ylim(200, 570)
 
 ##### inv
 kdeplot = sns.regplot(ax=ax3,x=float_tinvA, y = float_dinvA, scatter_kws = {"alpha": 0.5, 's': 8}, line_kws = {"color": "black",'lw': 1}, ci= None, label=None)
 r = np.corrcoef(float_tinvA, float_dinvA)
 ax3.tick_params(labelsize=13)
-# ~ ax3.text(15.5, 520,'r=', fontsize=15)
-# ~ ax3.text(18, 520, round(r[0, 1], 2), fontsize=15)
+ax3.text(3, 520,'r=', fontsize=13)
+ax3.text(5.9, 520, round(r[0, 1], 2), fontsize=14)
 ax3.set_ylim(200, 570)
 ax3.set_title('JJA', fontsize = 14)
 

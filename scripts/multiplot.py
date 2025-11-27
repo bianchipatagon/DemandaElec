@@ -8,6 +8,22 @@ df.index= pd.date_range(start='2007-01-01', end='2022-12-31', freq = 'D')
 
 df1 = pd.read_csv('/home/emi/Documents/MAESTRIA/14-Metodología/DemandaElec/DATOS/semana.txt', header=None, delimiter=';')
 df1.index= pd.date_range(start='2021-11-29 00:00:00', end='2021-12-05 23:00:00', freq = 'H')
+
+cld = pd.read_csv('/home/emi/Documents/MAESTRIA/14-Metodología/DemandaElec/DATOS/prueba_cld.txt', header=None, delimiter=',', na_values='-99')
+cld.index = pd.date_range(start="2021-01-01 00:00:00", end="2023-12-31  23:00:00",freq="H")
+# nos quedamos con los dias de la semana
+cld = cld.loc[(cld[1] == 1) | (cld[1] == 2) | (cld[1] == 3) | (cld[1] == 4) | (cld[1] == 5)]
+print(cld)
+hora = cld.groupby(cld.index.hour).mean()
+print(hora)
+# julio
+cld_jul = cld[cld.index.month == 7]
+horaJ = cld_jul.groupby(cld_jul.index.hour).mean()
+
+# diciembre
+cld_dic = cld[cld.index.month == 12]
+horaD = cld_dic.groupby(cld_dic.index.hour).mean()
+
 print(df1)
 # Create figure and GridSpec
 fig = plt.figure(figsize=(7, 4))
@@ -45,12 +61,19 @@ start_date = pd.to_datetime('2021-11-29')
 end_date = pd.to_datetime('2021-12-05')
 ax3.set_xlim(start_date, end_date)
 ax3.tick_params(axis='x', labelrotation = 90, labelsize=11)
+ax3.set_ylabel('[GW]')
 
-ax4.plot(df1.index, df1[1], alpha = 0.8)
+ax4.plot(hora.index, hora[2]/1000, alpha = 0.8)
+ax4.plot(horaJ.index, horaJ[2]/1000, alpha = 0.8, color='purple')
+ax4.plot(horaD.index, horaD[2]/1000, alpha = 0.8, color='tomato')
+ax4.set_ylabel('[GW]')
 ax4.set_title('d) 1 dia')
-start_date = pd.to_datetime('2021-11-29')
-end_date = pd.to_datetime('2021-11-30')
-ax4.set_xlim(start_date, end_date)
+ax4.set_xticks([4,8,12,16,20], ['04:00','08:00','12:00','16:00','20:00'])
+ax4.set_xlim(0, 23)
+
+# ~ start_date = pd.to_datetime('2021-11-29')
+# ~ end_date = pd.to_datetime('2021-11-30')
+# ~ ax4.set_xlim(start_date, end_date)
 ax4.tick_params(axis='x', labelrotation = 90, labelsize=11)
 
 '''
