@@ -87,7 +87,7 @@ corr_jul_n = [N.corrcoef(cld_jul1[2],cld_jul1[6])[0, 1],N.corrcoef(cld_jul2[2],c
 ,N.corrcoef(cld_jul21[2],cld_jul21[6])[0, 1],N.corrcoef(cld_jul22[2],cld_jul22[6])[0, 1],N.corrcoef(cld_jul23[2],cld_jul23[6])[0, 1],N.corrcoef(cld_jul24[2],cld_jul24[6])[0, 1]]
 
 # octubre
-cld_oct = cld[cld.index.month == 10]
+cld_oct = cld[cld.index.month == 9]
 cld_oct1 = cld_oct.loc[(cld_oct[0] == 1)]
 cld_oct2 = cld_oct.loc[(cld_oct[0] == 2)]
 cld_oct3 = cld_oct.loc[(cld_oct[0] == 3)]
@@ -237,7 +237,7 @@ corr_jul_t = [N.corrcoef(tem_jul1[2],tem_jul1[9])[0, 1],N.corrcoef(tem_jul2[2],t
 ,N.corrcoef(tem_jul21[2],tem_jul21[9])[0, 1],N.corrcoef(tem_jul22[2],tem_jul22[9])[0, 1],N.corrcoef(tem_jul23[2],tem_jul23[9])[0, 1],N.corrcoef(tem_jul24[2],tem_jul24[9])[0, 1]]
 
 # octubre
-tem_oct = tem[tem.index.month == 10]
+tem_oct = tem[tem.index.month == 9]
 tem_oct1 = tem_oct.loc[(tem_oct[0] == 1)]
 tem_oct2 = tem_oct.loc[(tem_oct[0] == 2)]
 tem_oct3 = tem_oct.loc[(tem_oct[0] == 3)]
@@ -385,7 +385,7 @@ corr_jul_v = [N.corrcoef(vie_jul1[3],vie_jul1[13])[0, 1],N.corrcoef(vie_jul2[3],
 ,N.corrcoef(vie_jul21[3],vie_jul21[13])[0, 1],N.corrcoef(vie_jul22[3],vie_jul22[13])[0, 1],N.corrcoef(vie_jul23[3],vie_jul23[13])[0, 1],N.corrcoef(vie_jul24[3],vie_jul24[13])[0, 1]]
 
 # octubre
-vie_oct = vie[vie.index.month == 10]
+vie_oct = vie[vie.index.month == 9]
 vie_oct1 = vie_oct.loc[(vie_oct[1] == 1)]
 vie_oct2 = vie_oct.loc[(vie_oct[1] == 2)]
 vie_oct3 = vie_oct.loc[(vie_oct[1] == 3)]
@@ -584,7 +584,7 @@ fig.subplots_adjust(hspace=0.05,wspace=0.05)
 fig.text(-0.007, 0.5, 'coef. correlación []', va='center', rotation='vertical',fontsize=15)  
 fig.text(0.91, 0.8, 'abril', va='center', rotation='vertical',fontsize=16)  
 fig.text(0.91, 0.6, 'julio', va='center', rotation='vertical',fontsize=16)  
-fig.text(0.91, 0.4, 'octubre', va='center', rotation='vertical',fontsize=16)  
+fig.text(0.91, 0.4, 'septiembre', va='center', rotation='vertical',fontsize=16)  
 fig.text(0.91, 0.2, 'diciembre', va='center', rotation='vertical',fontsize=16)  
 
 fig.text(0.45, 0.02, 'horas', va='center',fontsize=15)  

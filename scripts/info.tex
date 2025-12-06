@@ -147,7 +147,7 @@ Otra característica que se observa en la serie temporal de demanda es un aument
 
 En esta sección se describen los resultados del análisis de correlación a nivel horario entre la demanda eléctrica y las variables temperatura, nubosidad y velocidad del viento. Como era de esperarse, la temperatura resultó ser la variables con correlaciones más fuertes (figura \ref{corr}). Se observan correlaciones negativas para el invierno y positivas para el verano (en todos casos significativas) independientemente del horario del dia considerado. Esto podría deberse a una alta autocolleralión en la variable temperatura a escala diaria. En las estaciones de transición el comportamiento resulta diferente. En otoño (mes de abril) las correlaciones son negativas en horas de la mañana. Esto podria deberse a un mayor requerimiento por calefacción en en momento del dia más frio y que comienza la actividad. Luego se observan correlaciones positivas entre el mediodia y la tarde. En esta epoca de transición, quizá todavía se requieren usos de refrigeración si las temperaturas son elevadas. La significancia estadística solo se alcanza en esta franja horaria. Luego las correlaciones vuelven a ser negativas hacia la noche, reflejando quizá el mismo efécto que en horas de la mañana. Para la primavera (mes de octubre), las correlaciones tienen un comportamiento parecido al mes de verano (correlaciones positivas), aunque la significancia estadística es menor.
 
-La variable nubosidad presenta en general correlaciones de una significancia menor a la temperatura. Para el otoño las correlaciones son pisotivas (mayor nubosidad/mayor demanda) durante todo el dia, pero principalmente en las horas cercanas al mediodia. Resulta dificil dilucidar si esta correlación se debe a cambios en los usos de iluminación o climatización. Durante el invierno se observan correlaciones negativas durante las horas nocturnas. Esto quizá pueda deberse a que a mayor cobertura nubosa menor es la perdida de calor radiativo y, por lo tanto, menor el descenso termico nocturno. Luego, son positivas en la franja horaria entre el mediodia y la tarde. En la primavera las correlaciones son muy bajas en todas las horas del dia. Finalmente para el verano se observan correlaciones negativas principalmente a partir del mediodia y en horas de la tarde, probablemente asociado a una menor radiación solar indicente en superficie y, por ende, menores temperaturas máximas. 
+La variable nubosidad presenta en general correlaciones de una significancia menor a la temperatura. Para el mes de abril las correlaciones son positivas (mayor nubosidad/mayor demanda) durante todo el dia, pero principalmente en las horas cercanas al mediodia. Resulta dificil dilucidar si esta correlación se debe a cambios en los usos de iluminación o climatización. Durante el mes de julio se observan correlaciones negativas durante las horas nocturnas. Esto quizá pueda deberse a que a mayor cobertura nubosa menor es la perdida de calor radiativo y, por lo tanto, menor el descenso termico nocturno. Luego, son positivas en la franja horaria entre el mediodia y la tarde. En el mes de septiembre las correlaciones son positivas en todas las horas del dia, aunque significativas en la franja horaria que abarca desde el mediodia hasta la noche. Finalmente para el mes de diciembre se observan correlaciones negativas principalmente a partir del mediodia y en horas de la tarde, probablemente asociado a una menor radiación solar indicente en superficie y, por ende, menores temperaturas máximas. 
 
 \begin{figure}[H]
 	\includegraphics[clip,width=.7\columnwidth]{corr.jpg}
@@ -157,31 +157,45 @@ La variable nubosidad presenta en general correlaciones de una significancia men
 La variable velocidad del viento muestra correlaciones aún más débiles y no significativas. Se pueden mencionar correlaciones positivas en horas de la tarde en invierno, quizá asociadas a un descenso de la sensación térmica y consiguiente aumento del requerimiento para calefacción. 
 
 \subsubsection{Análisis de empuntamiento diario}
+
+A continuación se analiza la relación entre el empuntamiento diario de la demanda eléctrica y diferentes variables meteorológicas. Para el mes de abril no se observa una relación entre el empuntamiento de la demanda y las variables meteorológicas. Esto quizá se deba a que, como se verá más adelante, durante las estaciones de transición, tanto bajas como altas temperaturas pueden incrementar la demanda eléctrica, lo que se reflejaría en un bajo coeficiente de correlación. Para el mes de julio se observan correlaciones negativas con las variables $T_{max}$, $T_{min}$ y $\bar{T}$, lo que implica que a mayor temperatura, menor es el empuntamiento. LLamativamente, también se observa una correlación negativa con la amplitud térmica diaria, lo que hace sospechar que el empuntamiento de la demanda depende de la temperatura media o máxima, y no de la diferencia entre la temperatura de la tarde y la de la mañana. En cuanto a la nubosidad, se observan correlaciones positivas no significativas, reflejando el hecho de que la nubosidad disminuye la demanda en horas de la madrugada y la aumenta en horas de la tarde (figura \ref{corr}).
+
 \begin{figure}[H]
 	\includegraphics[clip,width=.9\columnwidth]{punta.jpg}
 	\caption{\label{punta} Coeficientes de correlación entre empuntamiento diario de la demanda eléctrica y parámetros meteorológicos}
 \end{figure}
 
+El mismo patrón se observa para el mes de septiembre. No obstante, se observa una menor sensibilidad a las variables de temperatura, y una mayor sensibilidad a las variables de nubosidad (cuyas correlaciones resultan significativas). Esta mayor sensibilidad a las variables de nubosidad se debe a que, para este mes, las correlaciones horarias entre la demanda y la nubosidad son positivas en todas las horas, y significativas en horas de la tarde (figura \ref{corr}). Para el mes de diciembre se observa un patron opuesto: las variables $T_{max}$, $T_{min}$, $\bar{T}$ e incluso la variabe $\Delta T$ muestran una correlación positiva con el empuntamiento. Para este mes, la demanda muestra una correlación positiva con la tempratura a toda hora (figura \ref{corr}), incluso en la hora de mayor demanda. Las variables de nubosidad, en cambio, muestras correlaciones negativas con el empuntamiento, reflejando el hecho de que la nubosidad esta asociada a menor demanda durante este mes (figura \ref{corr}), especialmente en horario de la tarde.
 
 \subsection{Escala intra-estacional}
+
+En la escala intra-estacional (datos de resolución diaria), la única variable meteorológica que evidenció relaciones significativas con la demanda de electricidad fue la temperatura del aire. Se encontraron relaciones lineales positivas entre la temperatura y la demanda diarias para el trimestre de verano, y negativas para el trimestre de invierno (coeficientes de correlación positivos para un nivel de significancia de 0.05)(figura \ref{scatter}). En las estaciones de transición, en cambio, se observó un patrón no lineal en el cual la demanda aumenta por debajo y por encima de ciertos umbrales de temperatura. Los coeficientes de correlación no-lineal de spearman, sin ambargo, no resultaron significativos. No se observaron relaciones claras entre la demanda eléctrica y la nubosidad o la velocidad del viento en esta escala (no mostrado).
+
 \begin{figure}[H]
 	\includegraphics[clip,width=1\columnwidth]{scatter_temp.jpg}
 	\caption{\label{scatter} Diagramas de dispersión entre demanda eléctrica y temperatura del aire}
 \end{figure}
+
+Como se mencionó en la sección de metodología, en esta escala, además de analizar la relación entre la demanda eléctrica y variables meteorológicas locales, se analizó además la relación entre la demanda eléctrica y fenómenos climáticos no locales que influyen en el clima local. En particlular, se analizaron: un fenómeno de origen tropical (la Oscilación de Madden-Julian o MJO), y uno extra-tropical (la Oscilación Antártica o AAO).
+La MJO produce impactos bien diferenciados en la demanda eléctrica durante las diferentes estaciones del año. Durante el trimestre de verano se observa una reducción en la demanda cercana al 3\% durante la fase 3 (figura \ref{mjoD}), la cual esta asociada a menores temperaturas en la zona centro del pais (figura \ref{mjoT}). Para el trimestre de otoño se observa un aumento en la demanda en las fases 5 y 6 (en las cuales no hay un marcado impacto en la temperatura), y una disminución en las fases 7 y 8, las cuales estan asociadas a mayores temperaturas en la zona centro del pais. Como se mencionó antes, la no-linealidad entre la temperatura y la demanda en las estaciones de transición complica la interpretación física de los resultados. 
 
 \begin{figure}[H]
 	\includegraphics[clip,width=1\columnwidth]{mjoD.png}
 	\caption{\label{mjoD} Anomalías percentuales de demanda eléctrica por estación del año y por fase de la MJO}
 \end{figure}
 
+Para el trimestre de invierno se observa una disminución de la demanda en la fase 6, la cual esta asociada a mayores temperaturas; y un aumento en la fase 7, asociada a menores temperaturas. Llama la atención que las fases 1 y 3, asociadas a marcadas anomalías positivas y negativas de temperatura respectivamente, no produzcan una respuesta en la demanda. Para el trimestre de primavera se observa una marcada disminución en la demanda durante la fase 8, la cual esta asociada a mayores temperaturas en el centro del pais.
+
 \begin{figure}[H]
 	\includegraphics[clip,width=1\columnwidth]{T2M.png}
 	\caption{\label{mjoT} Mapas de anomalías de temperatura del aire por estación del año y por fase de la MJO}
 \end{figure}
 
+La AAO produce un impacto en la demanda en los trimestres de verano y otoño: La fase negativa esta asociada a mayores temperaturas en el centro del pais (figura \ref{aaoT}) y mayor demanda (figura \ref{aaoD}), y la fase positiva esta asociada a menores temperaturas y menor demanda. 
+
 \begin{figure}[H]
 	\includegraphics[clip,width=1\columnwidth]{AAO_D.png}
-	\caption{\label{aadD} Anomalías percentuales de demanda eléctrica por estación del año y por fase de la AAO}
+	\caption{\label{aaoD} Anomalías percentuales de demanda eléctrica por estación del año y por fase de la AAO}
 \end{figure}
 
 \begin{figure}[H]
@@ -191,11 +205,14 @@ La variable velocidad del viento muestra correlaciones aún más débiles y no s
 
 \subsection{Escala estacional/interanual}
 
+En la escala interanual no se hallaron relaciones robustas entre la demanda eléctrica e indicadores climáticos tanto locales como remotos. Los coeficientes de correlación entre las series estacionales de demanda e indices climáticos de fenómenos como El Niño, la AAO, e incluso la temperatura regional resultaron no significativos estadísticamente (no mostrado). Tampoco se evidenció una relación con los indices climáticos a partir del análisis de las tablas de contingencia (tabla \ref{indices}). Se refleja en las tablas la mayor ocurrencia de eventos Niña y AAO neutrales durante el período analizado (2007-2022), y solo se evidencia la tendencia a menor temperatura/menor demanda (y viceversa) durante el verano, y mayor temperatura/menor demanda durante el invierno (y viceversa). De hecho, estas fueron las unicas relaciones estadísticamente significativas con un nivel de significancia de 0.05.
+
 \begin{figure}[H]
 	\includegraphics[clip,width=0.7\columnwidth]{indices.pdf}
 	\caption{\label{indices} Tablas de contingencia entre demanda eléctrica estacional e indices de El Niño (columna izquierda), la Oscilación Antártica (columna del medio), y temperatura (columna derecha)}
 \end{figure}
 
+\section{Discusión y Conclusiones}
 \section{Referencias}
 
 \bibliography{mybibfile}

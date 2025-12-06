@@ -159,7 +159,7 @@ ax3.axhline(linewidth=1, color='black')
 ax3.axhline(y=0.274,linewidth=0.75, color='black',ls =  '--')
 ax3.axhline(y=-0.274,linewidth=0.75, color='black',ls =  '--')
 ax3.set_xticks([1,2,3,4,5,6,7], [r'$T_{max}$',r'$T_{min}$',r'$\bar{T}$','\u0394T',r'$\bar{NUB}$',r'$NUB_{noct}$',r'$NUB_{diu}$'])
-ax3.set_title('octubre', fontsize=13)
+ax3.set_title('septiembre', fontsize=13)
 
 ax4.bar(X, corr_12, width=1, edgecolor="white", linewidth=0.7 , alpha = 0.8, color=colors)
 ax4.tick_params(axis='y', labelsize=13)
