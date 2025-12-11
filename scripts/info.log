@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.18)  6 DEC 2025 12:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.18)  11 DEC 2025 16:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -829,12 +829,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write4
 \openout4 = `info.toc'.
 
-<images.png, id=111, 225.84375pt x 225.84375pt>
+<images.png, id=116, 225.84375pt x 225.84375pt>
 File: images.png Graphic file (type png)
 <use images.png>
 Package pdftex.def Info: images.png  used on input line 66.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
-<isologotipo-unco-azul.png, id=112, 142.3719pt x 142.3719pt>
+<isologotipo-unco-azul.png, id=117, 142.3719pt x 142.3719pt>
 File: isologotipo-unco-azul.png Graphic file (type png)
 <use isologotipo-unco-azul.png>
 Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 66.
@@ -851,10 +851,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
  <./images.png> <./isologotipo-unco-azul.png>]
-Overfull \hbox (80.89008pt too wide) in paragraph at lines 72--74
-\OT1/cmr/m/n/10.95 de usua-rios del mer-ca-do el^^Sectri-co (https://cammesaweb
-.cammesa.com/2023/03/14/maximos-
- []
+
+LaTeX Warning: Citation `cammesa-web' on page 2 undefined on input line 72.
 
 File: images.png Graphic file (type png)
 <use images.png>
@@ -873,18 +871,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-20.53278pt}.
 
 [2]
-Overfull \hbox (79.64305pt too wide) in paragraph at lines 84--87
-\OT1/cmr/m/n/10.95 in-for-ma-ci^^Son del reana-li-sis clim^^Sati-co ME-RRA2 (ht
-tps://gmao.gsfc.nasa.gov/reanalysis/merra-
- []
+
+LaTeX Warning: Citation `smn' on page 3 undefined on input line 84.
+
+
+LaTeX Warning: Citation `merra' on page 3 undefined on input line 85.
 
 File: images.png Graphic file (type png)
 <use images.png>
-Package pdftex.def Info: images.png  used on input line 87.
+Package pdftex.def Info: images.png  used on input line 86.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
 File: isologotipo-unco-azul.png Graphic file (type png)
 <use isologotipo-unco-azul.png>
-Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 87.
+Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 86.
 (pdftex.def)             Requested size: 28.45215pt x 28.45274pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -895,18 +894,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-20.53278pt}.
 
 [3]
-<mapa.png, id=186, 330.2739pt x 579.3645pt>
+<mapa.png, id=191, 330.2739pt x 579.3645pt>
 File: mapa.png Graphic file (type png)
 <use mapa.png>
-Package pdftex.def Info: mapa.png  used on input line 92.
+Package pdftex.def Info: mapa.png  used on input line 91.
 (pdftex.def)             Requested size: 143.9978pt x 252.60498pt.
 File: images.png Graphic file (type png)
 <use images.png>
-Package pdftex.def Info: images.png  used on input line 101.
+Package pdftex.def Info: images.png  used on input line 96.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
 File: isologotipo-unco-azul.png Graphic file (type png)
 <use isologotipo-unco-azul.png>
-Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 101.
+Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 96.
 (pdftex.def)             Requested size: 28.45215pt x 28.45274pt.
 
 
@@ -921,85 +920,85 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.101 
-       <./mapa.png>]
-<ampli.png, id=197, 209.1012pt x 137.43346pt>
+l.96 
+      <./mapa.png>]
+<ampli.png, id=202, 209.1012pt x 137.43346pt>
 File: ampli.png Graphic file (type png)
 <use ampli.png>
-Package pdftex.def Info: ampli.png  used on input line 103.
+Package pdftex.def Info: ampli.png  used on input line 102.
 (pdftex.def)             Requested size: 216.0022pt x 141.97324pt.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.110 Anomalía intraestacional_
+l.109 Anomalía intraestacional_
                                 {(d,a)} =  valor \,diario_{(d,a)} \,–\, pr...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 110.
+LaTeX Warning: Command \textendash invalid in math mode on input line 109.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 110.
+LaTeX Warning: Command \' invalid in math mode on input line 109.
 
 ! Please use \mathaccent for accents in math mode.
 \add@accent ... \let \ignorespaces \relax \accent 
                                                   #1 #2\egroup \ifmmode \els...
-l.110 ...} \,–\, promedio \,diario \\\\ \,climá
+l.109 ...} \,–\, promedio \,diario \\\\ \,climá
                                                   tológico_{(d)} \,– \,(p...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 110.
+LaTeX Warning: Command \' invalid in math mode on input line 109.
 
 ! Please use \mathaccent for accents in math mode.
 \add@accent ... \let \ignorespaces \relax \accent 
                                                   #1 #2\egroup \ifmmode \els...
-l.110 ...��\, promedio \,diario \\\\ \,climátoló
+l.109 ...��\, promedio \,diario \\\\ \,climátoló
                                                   gico_{(d)} \,– \,(promed...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 110.
+LaTeX Warning: Command \textendash invalid in math mode on input line 109.
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 110.
+LaTeX Warning: Command \textendash invalid in math mode on input line 109.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.112 
+l.111 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--112
+Underfull \hbox (badness 10000) in paragraph at lines 107--111
 
  []
 
 
-Overfull \hbox (0.56122pt too wide) in paragraph at lines 108--112
+Overfull \hbox (0.56122pt too wide) in paragraph at lines 107--111
 \OML/cmm/m/it/10.95 clim[]tol[]gico[] \OT1/cmr/m/n/10.95 { (\OML/cmm/m/it/10.95
  promedio estacional DEF[] \OT1/cmr/m/n/10.95 { \OML/cmm/m/it/10.95 promedio es
 tacional DEF[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--112
+Underfull \hbox (badness 10000) in paragraph at lines 107--111
 
  []
 
 File: images.png Graphic file (type png)
 <use images.png>
-Package pdftex.def Info: images.png  used on input line 112.
+Package pdftex.def Info: images.png  used on input line 111.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
 File: isologotipo-unco-azul.png Graphic file (type png)
 <use isologotipo-unco-azul.png>
-Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 112.
+Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 111.
 (pdftex.def)             Requested size: 28.45215pt x 28.45274pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1013,19 +1012,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.112 
+l.111 
        <./ampli.png>]
 
-LaTeX Warning: Citation `gillett2006regional' on page 6 undefined on input line
- 115.
+LaTeX Warning: Citation `donald2004forecasting' on page 6 undefined on input li
+ne 114.
 
 File: images.png Graphic file (type png)
 <use images.png>
-Package pdftex.def Info: images.png  used on input line 117.
+Package pdftex.def Info: images.png  used on input line 115.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
 File: isologotipo-unco-azul.png Graphic file (type png)
 <use isologotipo-unco-azul.png>
-Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 117.
+Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 115.
 (pdftex.def)             Requested size: 28.45215pt x 28.45274pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1036,18 +1035,100 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-20.53278pt}.
 
 [6]
-<decomp.png, id=248, 402.66435pt x 280.52805pt>
+<mjo.png, id=239, 930.47626pt x 394.47375pt>
+File: mjo.png Graphic file (type png)
+<use mjo.png>
+Package pdftex.def Info: mjo.png  used on input line 117.
+(pdftex.def)             Requested size: 288.0011pt x 122.09297pt.
+
+
+LaTeX Warning: Citation `donald2004forecasting' on page 7 undefined on input li
+ne 118.
+
+
+LaTeX Warning: Citation `donald2004forecasting' on page 7 undefined on input li
+ne 118.
+
+
+LaTeX Warning: Citation `gillett2006regional' on page 7 undefined on input line
+ 121.
+
+
+LaTeX Warning: Citation `villalba2012unusual' on page 7 undefined on input line
+ 121.
+
+<aaomapa.png, id=247, 1190.4475pt x 420.57124pt>
+File: aaomapa.png Graphic file (type png)
+<use aaomapa.png>
+Package pdftex.def Info: aaomapa.png  used on input line 124.
+(pdftex.def)             Requested size: 360.0pt x 127.17987pt.
+
+LaTeX Warning: Citation `villalba2012unusual' on page 7 undefined on input line
+ 125.
+
+
+LaTeX Warning: Citation `villalba2012unusual' on page 7 undefined on input line
+ 125.
+
+File: images.png Graphic file (type png)
+<use images.png>
+Package pdftex.def Info: images.png  used on input line 127.
+(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
+File: isologotipo-unco-azul.png Graphic file (type png)
+<use isologotipo-unco-azul.png>
+Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 127.
+(pdftex.def)             Requested size: 28.45215pt x 28.45274pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 32.53278pt, for example:
+(fancyhdr)                \setlength{\headheight}{32.53278pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-20.53278pt}.
+
+[7pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.127 
+       <./mjo.png>]
+
+LaTeX Warning: Citation `diaz2000nino' on page 8 undefined on input line 132.
+
+File: images.png Graphic file (type png)
+<use images.png>
+Package pdftex.def Info: images.png  used on input line 133.
+(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
+File: isologotipo-unco-azul.png Graphic file (type png)
+<use isologotipo-unco-azul.png>
+Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 133.
+(pdftex.def)             Requested size: 28.45215pt x 28.45274pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 32.53278pt, for example:
+(fancyhdr)                \setlength{\headheight}{32.53278pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-20.53278pt}.
+
+[8pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.133 
+       <./aaomapa.png>]
+<decomp.png, id=279, 402.66435pt x 280.52805pt>
 File: decomp.png Graphic file (type png)
 <use decomp.png>
-Package pdftex.def Info: decomp.png  used on input line 122.
+Package pdftex.def Info: decomp.png  used on input line 135.
 (pdftex.def)             Requested size: 323.9978pt x 225.724pt.
 File: images.png Graphic file (type png)
 <use images.png>
-Package pdftex.def Info: images.png  used on input line 125.
+Package pdftex.def Info: images.png  used on input line 145.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
 File: isologotipo-unco-azul.png Graphic file (type png)
 <use isologotipo-unco-azul.png>
-Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 125.
+Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 145.
 (pdftex.def)             Requested size: 28.45215pt x 28.45274pt.
 
 
@@ -1058,47 +1139,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-20.53278pt}.
 
-[7]
-<multi.png, id=265, 498.4221pt x 281.3712pt>
-File: multi.png Graphic file (type png)
-<use multi.png>
-Package pdftex.def Info: multi.png  used on input line 134.
-(pdftex.def)             Requested size: 323.9978pt x 182.90628pt.
-File: images.png Graphic file (type png)
-<use images.png>
-Package pdftex.def Info: images.png  used on input line 136.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
-File: isologotipo-unco-azul.png Graphic file (type png)
-<use isologotipo-unco-azul.png>
-Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 136.
-(pdftex.def)             Requested size: 28.45215pt x 28.45274pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 32.53278pt, for example:
-(fancyhdr)                \setlength{\headheight}{32.53278pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-20.53278pt}.
-
-[8pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
+[9pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.136 \end{figure}
-                   <./decomp.png>]
-<minmax.png, id=276, 354.123pt x 281.97345pt>
+l.145 
+       <./decomp.png>]
+<multi.png, id=294, 498.4221pt x 281.3712pt>
+File: multi.png Graphic file (type png)
+<use multi.png>
+Package pdftex.def Info: multi.png  used on input line 147.
+(pdftex.def)             Requested size: 323.9978pt x 182.90628pt.
+<minmax.png, id=298, 354.123pt x 281.97345pt>
 File: minmax.png Graphic file (type png)
 <use minmax.png>
-Package pdftex.def Info: minmax.png  used on input line 141.
+Package pdftex.def Info: minmax.png  used on input line 154.
 (pdftex.def)             Requested size: 143.9978pt x 114.66328pt.
 File: images.png Graphic file (type png)
 <use images.png>
-Package pdftex.def Info: images.png  used on input line 149.
+Package pdftex.def Info: images.png  used on input line 157.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
 File: isologotipo-unco-azul.png Graphic file (type png)
 <use isologotipo-unco-azul.png>
-Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 149.
+Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 157.
 (pdftex.def)             Requested size: 28.45215pt x 28.45274pt.
 
 
@@ -1109,29 +1172,47 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-20.53278pt}.
 
-[9pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) 
-has been already used, duplicate ignored
+[10pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
+ has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.149 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-5}) has been already used, duplicate ignored
+l.157 
+       <./multi.png>]
+File: images.png Graphic file (type png)
+<use images.png>
+Package pdftex.def Info: images.png  used on input line 164.
+(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
+File: isologotipo-unco-azul.png Graphic file (type png)
+<use isologotipo-unco-azul.png>
+Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 164.
+(pdftex.def)             Requested size: 28.45215pt x 28.45274pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 32.53278pt, for example:
+(fancyhdr)                \setlength{\headheight}{32.53278pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-20.53278pt}.
+
+[11pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
+ has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.149 
-       <./multi.png> <./minmax.png>]
-<corr.jpg, id=288, 427.8384pt x 437.9562pt>
+l.164 
+       <./minmax.png>]
+<corr.jpg, id=316, 427.8384pt x 437.9562pt>
 File: corr.jpg Graphic file (type jpg)
 <use corr.jpg>
-Package pdftex.def Info: corr.jpg  used on input line 153.
+Package pdftex.def Info: corr.jpg  used on input line 166.
 (pdftex.def)             Requested size: 251.9989pt x 257.95753pt.
 File: images.png Graphic file (type png)
 <use images.png>
-Package pdftex.def Info: images.png  used on input line 156.
+Package pdftex.def Info: images.png  used on input line 175.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
 File: isologotipo-unco-azul.png Graphic file (type png)
 <use isologotipo-unco-azul.png>
-Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 156.
+Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 175.
 (pdftex.def)             Requested size: 28.45215pt x 28.45274pt.
 
 
@@ -1142,68 +1223,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-20.53278pt}.
 
-[10]
-File: images.png Graphic file (type png)
-<use images.png>
-Package pdftex.def Info: images.png  used on input line 162.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
-File: isologotipo-unco-azul.png Graphic file (type png)
-<use isologotipo-unco-azul.png>
-Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 162.
-(pdftex.def)             Requested size: 28.45215pt x 28.45274pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 32.53278pt, for example:
-(fancyhdr)                \setlength{\headheight}{32.53278pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-20.53278pt}.
-
-[11pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
+[12pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.162 
+l.175 
        <./corr.jpg>]
-<punta.jpg, id=301, 511.6716pt x 197.538pt>
+<punta.jpg, id=324, 511.6716pt x 197.538pt>
 File: punta.jpg Graphic file (type jpg)
 <use punta.jpg>
-Package pdftex.def Info: punta.jpg  used on input line 164.
+Package pdftex.def Info: punta.jpg  used on input line 177.
 (pdftex.def)             Requested size: 323.9978pt x 125.08557pt.
-File: images.png Graphic file (type png)
-<use images.png>
-Package pdftex.def Info: images.png  used on input line 173.
-(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
-File: isologotipo-unco-azul.png Graphic file (type png)
-<use isologotipo-unco-azul.png>
-Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 173.
-(pdftex.def)             Requested size: 28.45215pt x 28.45274pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 32.53278pt, for example:
-(fancyhdr)                \setlength{\headheight}{32.53278pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-20.53278pt}.
-
-[12pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
- has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.173 
-       <./punta.jpg>]
-<scatter_temp.jpg, id=315, 573.8238pt x 183.3249pt>
-File: scatter_temp.jpg Graphic file (type jpg)
-<use scatter_temp.jpg>
-Package pdftex.def Info: scatter_temp.jpg  used on input line 175.
-(pdftex.def)             Requested size: 360.0pt x 115.01414pt.
-<mjoD.png, id=319, 490.4724pt x 159.9576pt>
-File: mjoD.png Graphic file (type png)
-<use mjoD.png>
-Package pdftex.def Info: mjoD.png  used on input line 183.
-(pdftex.def)             Requested size: 360.0pt x 117.4051pt.
 File: images.png Graphic file (type png)
 <use images.png>
 Package pdftex.def Info: images.png  used on input line 186.
@@ -1221,24 +1251,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-20.53278pt}.
 
-[13pdfTeX warning (ext4): destination with the same identifier (name{figure.8})
+[13pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.186 
-       <./scatter_temp.jpg>]
-<T2M.png, id=329, 528.17325pt x 332.442pt>
-File: T2M.png Graphic file (type png)
-<use T2M.png>
-Package pdftex.def Info: T2M.png  used on input line 190.
-(pdftex.def)             Requested size: 360.0pt x 226.59526pt.
+       <./punta.jpg>]
+<scatter_temp.jpg, id=337, 573.8238pt x 183.3249pt>
+File: scatter_temp.jpg Graphic file (type jpg)
+<use scatter_temp.jpg>
+Package pdftex.def Info: scatter_temp.jpg  used on input line 188.
+(pdftex.def)             Requested size: 360.0pt x 115.01414pt.
+<mjoD.png, id=341, 490.4724pt x 159.9576pt>
+File: mjoD.png Graphic file (type png)
+<use mjoD.png>
+Package pdftex.def Info: mjoD.png  used on input line 196.
+(pdftex.def)             Requested size: 360.0pt x 117.4051pt.
 File: images.png Graphic file (type png)
 <use images.png>
-Package pdftex.def Info: images.png  used on input line 195.
+Package pdftex.def Info: images.png  used on input line 199.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
 File: isologotipo-unco-azul.png Graphic file (type png)
 <use isologotipo-unco-azul.png>
-Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 195.
+Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 199.
 (pdftex.def)             Requested size: 28.45215pt x 28.45274pt.
 
 
@@ -1249,34 +1284,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-20.53278pt}.
 
-[14pdfTeX warning (ext4): destination with the same identifier (name{figure.9})
- has been already used, duplicate ignored
+[14pdfTeX warning (ext4): destination with the same identifier (name{figure.10}
+) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.195 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-10}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.195 
-       <./mjoD.png> <./T2M.png>]
-<AAO_D.png, id=341, 475.0548pt x 159.9576pt>
-File: AAO_D.png Graphic file (type png)
-<use AAO_D.png>
-Package pdftex.def Info: AAO_D.png  used on input line 197.
-(pdftex.def)             Requested size: 360.0pt x 121.22244pt.
-<t3.png, id=343, 473.8503pt x 262.0992pt>
-File: t3.png Graphic file (type png)
-<use t3.png>
-Package pdftex.def Info: t3.png  used on input line 202.
-(pdftex.def)             Requested size: 323.9978pt x 179.2129pt.
+l.199 
+       <./scatter_temp.jpg>]
+<T2M.png, id=351, 528.17325pt x 332.442pt>
+File: T2M.png Graphic file (type png)
+<use T2M.png>
+Package pdftex.def Info: T2M.png  used on input line 203.
+(pdftex.def)             Requested size: 360.0pt x 226.59526pt.
 File: images.png Graphic file (type png)
 <use images.png>
-Package pdftex.def Info: images.png  used on input line 209.
+Package pdftex.def Info: images.png  used on input line 208.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
 File: isologotipo-unco-azul.png Graphic file (type png)
 <use isologotipo-unco-azul.png>
-Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 209.
+Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 208.
 (pdftex.def)             Requested size: 28.45215pt x 28.45274pt.
 
 
@@ -1291,26 +1316,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.209 
+l.208 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 12}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.209 
-       <./AAO_D.png> <./t3.png>]
-<indices.pdf, id=356, 389.83925pt x 432.39589pt>
-File: indices.pdf Graphic file (type pdf)
-<use indices.pdf>
-Package pdftex.def Info: indices.pdf  used on input line 211.
-(pdftex.def)             Requested size: 251.9989pt x 279.5101pt.
- (./info.bbl
+l.208 
+       <./mjoD.png> <./T2M.png>]
+<AAO_D.png, id=363, 475.0548pt x 159.9576pt>
+File: AAO_D.png Graphic file (type png)
+<use AAO_D.png>
+Package pdftex.def Info: AAO_D.png  used on input line 210.
+(pdftex.def)             Requested size: 360.0pt x 121.22244pt.
+<t3.png, id=365, 473.8503pt x 262.0992pt>
+File: t3.png Graphic file (type png)
+<use t3.png>
+Package pdftex.def Info: t3.png  used on input line 215.
+(pdftex.def)             Requested size: 323.9978pt x 179.2129pt.
 File: images.png Graphic file (type png)
 <use images.png>
-Package pdftex.def Info: images.png  used on input line 17.
+Package pdftex.def Info: images.png  used on input line 222.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
 File: isologotipo-unco-azul.png Graphic file (type png)
 <use isologotipo-unco-azul.png>
-Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 17.
+Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 222.
 (pdftex.def)             Requested size: 28.45215pt x 28.45274pt.
 
 
@@ -1325,15 +1354,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.17 
-      <./indices.pdf>]
+l.222 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+14}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.222 
+       <./AAO_D.png> <./t3.png>]
+<indices.pdf, id=378, 389.83925pt x 432.39589pt>
+File: indices.pdf Graphic file (type pdf)
+<use indices.pdf>
+Package pdftex.def Info: indices.pdf  used on input line 224.
+(pdftex.def)             Requested size: 251.9989pt x 279.5101pt.
+ (./info.bbl
 File: images.png Graphic file (type png)
 <use images.png>
-Package pdftex.def Info: images.png  used on input line 74.
+Package pdftex.def Info: images.png  used on input line 12.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
 File: isologotipo-unco-azul.png Graphic file (type png)
 <use isologotipo-unco-azul.png>
-Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 74.
+Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 12.
 (pdftex.def)             Requested size: 28.45215pt x 28.45274pt.
 
 
@@ -1344,14 +1384,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-20.53278pt}.
 
-[17]
+[17pdfTeX warning (ext4): destination with the same identifier (name{figure.15}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.12 
+      <./indices.pdf>]
 File: images.png Graphic file (type png)
 <use images.png>
-Package pdftex.def Info: images.png  used on input line 130.
+Package pdftex.def Info: images.png  used on input line 60.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
 File: isologotipo-unco-azul.png Graphic file (type png)
 <use isologotipo-unco-azul.png>
-Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 130.
+Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 60.
 (pdftex.def)             Requested size: 28.45215pt x 28.45274pt.
 
 
@@ -1365,11 +1410,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [18]
 File: images.png Graphic file (type png)
 <use images.png>
-Package pdftex.def Info: images.png  used on input line 187.
+Package pdftex.def Info: images.png  used on input line 114.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
 File: isologotipo-unco-azul.png Graphic file (type png)
 <use isologotipo-unco-azul.png>
-Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 187.
+Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 114.
 (pdftex.def)             Requested size: 28.45215pt x 28.45274pt.
 
 
@@ -1380,14 +1425,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-20.53278pt}.
 
-[19])
+[19]
 File: images.png Graphic file (type png)
 <use images.png>
-Package pdftex.def Info: images.png  used on input line 227.
+Package pdftex.def Info: images.png  used on input line 172.
 (pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
 File: isologotipo-unco-azul.png Graphic file (type png)
 <use isologotipo-unco-azul.png>
-Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 227.
+Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 172.
 (pdftex.def)             Requested size: 28.45215pt x 28.45274pt.
 
 
@@ -1398,40 +1443,52 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-20.53278pt}.
 
-[20] (./info.aux
+[20])
+File: images.png Graphic file (type png)
+<use images.png>
+Package pdftex.def Info: images.png  used on input line 240.
+(pdftex.def)             Requested size: 28.45094pt x 28.45274pt.
+File: isologotipo-unco-azul.png Graphic file (type png)
+<use isologotipo-unco-azul.png>
+Package pdftex.def Info: isologotipo-unco-azul.png  used on input line 240.
+(pdftex.def)             Requested size: 28.45215pt x 28.45274pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 32.53278pt, for example:
+(fancyhdr)                \setlength{\headheight}{32.53278pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-20.53278pt}.
+
+[21] (./info.aux
 LaTeX Info: Redefining \. on input line 58.
 LaTeX Info: Redefining \% on input line 58.
 )
 
 LaTeX Warning: There were undefined references.
 
-
-Package rerunfilecheck Warning: File `info.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `info.out':
-(rerunfilecheck)             Before: D102312C96053860D1A5F69048EF2BF5;2242
-(rerunfilecheck)             After:  8DD5C083B5E74DF23E4DCDF4E50CA9E0;2415.
+Package rerunfilecheck Info: File `info.out' has not changed.
+(rerunfilecheck)             Checksum: 8DD5C083B5E74DF23E4DCDF4E50CA9E0;2415.
  ) 
 Here is how much of TeX's memory you used:
- 13041 strings out of 478287
- 203166 string characters out of 5849289
- 508326 words of memory out of 5000000
- 30937 multiletter control sequences out of 15000+600000
+ 13061 strings out of 478287
+ 203408 string characters out of 5849289
+ 508712 words of memory out of 5000000
+ 30952 multiletter control sequences out of 15000+600000
  477292 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,15n,63p,2390b,516s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,15n,63p,2365b,517s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on info.pdf (20 pages, 4291278 bytes).
+Output written on info.pdf (21 pages, 4800969 bytes).
 PDF statistics:
- 761 PDF objects out of 1000 (max. 8388607)
- 574 compressed objects within 6 object streams
- 96 named destinations out of 1000 (max. 500000)
- 274 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 783 PDF objects out of 1000 (max. 8388607)
+ 589 compressed objects within 6 object streams
+ 99 named destinations out of 1000 (max. 500000)
+ 304 words of extra memory for PDF output out of 10000 (max. 10000000)
 
