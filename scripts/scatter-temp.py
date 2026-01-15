@@ -123,7 +123,9 @@ ax1.set_title('DEF', fontsize = 13)
 ax1.set_ylim(200, 570)
 ax1.set_ylabel('[MWh]', fontsize=15)
 ax1.set_yticks([300,400,500])
+ax1.set_xticks([18,20,22,24,26,28], ['18','20','22','24','26','28'])
 
+ax1.grid(color='gray', linestyle='dashed', which = 'both' )
 ##### oto
 kdeplot = sns.regplot(ax=ax2,x=float_totoA, y = float_dotoA, order=2, scatter_kws = {"alpha": 0.6, 's': 8}, line_kws = {"color": "black",'lw': 1}, ci= None, label=None)
 # ~ r, p_value = speeearmanr(float_totoA, float_dotoA)
@@ -132,6 +134,9 @@ ax2.set_title('MAM', fontsize = 13)
 
 # ~ ax2.texte, r, fontsize=15)
 ax2.set_ylim(200, 570)
+ax2.set_title('JJA', fontsize = 14)
+ax2.set_xticks([6,8,10,12,14,16,18,20,22,24,26,28], ['6','8','10','12','14','16','18','20','22','24','26','28'])
+ax2.grid(color='gray', linestyle='dashed', which = 'both' )
 
 ##### inv
 kdeplot = sns.regplot(ax=ax3,x=float_tinvA, y = float_dinvA, scatter_kws = {"alpha": 0.5, 's': 8}, line_kws = {"color": "black",'lw': 1}, ci= None, label=None)
@@ -141,7 +146,9 @@ ax3.text(3, 520,'r=', fontsize=13)
 ax3.text(5.9, 520, round(r[0, 1], 2), fontsize=14)
 ax3.set_ylim(200, 570)
 ax3.set_title('JJA', fontsize = 14)
+ax3.set_xticks([10,12,14,16,18,20,22,24,26,28], ['10','12','14','16','18','20','22','24','26','28'])
 
+ax3.grid(color='gray', linestyle='dashed', which = 'both' )
 ##### pri
 kdeplot = sns.regplot(ax=ax4,x=float_tpriA, y = float_dpriA, order=2, scatter_kws = { "alpha": 0.5, 's': 8}, line_kws = {"color": "black",'lw': 1}, ci= None, label=None)
 r = np.corrcoef(float_tpriA,float_dpriA)
@@ -150,6 +157,9 @@ ax4.tick_params(labelsize=13)
 # ~ ax4.text(-1.8, 350, round(r[0, 1], 2), fontsize=15)
 ax4.set_ylim(200, 570)
 ax4.set_title('SON', fontsize = 14)
+ax4.set_xticks([10,12,14,16,18,20,22,24,26,28], ['10','12','14','16','18','20','22','24','26','28'])
+
+ax4.grid(color='gray', linestyle='dashed', which = 'both' )
 
 
 fig.subplots_adjust(hspace=0.2,wspace=0.25)

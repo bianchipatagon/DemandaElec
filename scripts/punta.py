@@ -27,6 +27,8 @@ tem_4_min = tem_4.resample('D').min()
 tem_4_med = tem_4.resample('D').mean()
 ############ deltaT
 deltaT_4 = tem_4_max-tem_4_min 
+
+
 ############ nubosidad
 cld_4_med = cld_4.resample('D').mean()
 ############ nubosidad noct
