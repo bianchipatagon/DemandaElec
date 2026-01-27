@@ -19,31 +19,6 @@ L.~Dubus, S.~Muralidharan, A.~Troccoli, What does the energy industry require
 I.~Staffell, S.~Pfenninger, The increasing impact of weather on electricity
   supply and demand, Energy 145 (2018) 65--78.
 
-\bibitem{moral2005modelling}
-J.~Moral-Carcedo, J.~Vic{\'e}ns-Otero, Modelling the non-linear response of
-  spanish electricity demand to temperature variations, Energy economics 27~(3)
-  (2005) 477--494.
-
-\bibitem{de2015seasonal}
-M.~De~Felice, A.~Alessandri, F.~Catalano, Seasonal climate forecasts for
-  medium-term electricity demand forecasting, Applied Energy 137 (2015)
-  435--444.
-
-\bibitem{cassarino2018impact}
-T.~G. Cassarino, E.~Sharp, M.~Barrett, The impact of social and weather drivers
-  on the historical electricity demand in europe, Applied energy 229 (2018)
-  176--185.
-
-\bibitem{psiloglou2009factors}
-B.~Psiloglou, C.~Giannakopoulos, S.~Majithia, M.~Petrakis, Factors affecting
-  electricity demand in athens, greece and london, uk: A comparative
-  assessment, Energy 34~(11) (2009) 1855--1863.
-
-\bibitem{apadula2012relationships}
-F.~Apadula, A.~Bassini, A.~Elli, S.~Scapin, Relationships between
-  meteorological variables and monthly electricity demand, Applied Energy 98
-  (2012) 346--356.
-
 \bibitem{auffhammer2014measuring}
 M.~Auffhammer, E.~T. Mansur, Measuring climatic impacts on energy consumption:
   A review of the empirical literature, Energy Economics 46 (2014) 522--530.
@@ -58,6 +33,16 @@ H.~E. Thornton, A.~A. Scaife, B.~J. Hoskins, D.~J. Brayshaw, The relationship
   between wind power, electricity demand and winter weather patterns in great
   britain, Environmental Research Letters 12~(6) (2017) 064017.
 
+\bibitem{cassarino2018impact}
+T.~G. Cassarino, E.~Sharp, M.~Barrett, The impact of social and weather drivers
+  on the historical electricity demand in europe, Applied energy 229 (2018)
+  176--185.
+
+\bibitem{apadula2012relationships}
+F.~Apadula, A.~Bassini, A.~Elli, S.~Scapin, Relationships between
+  meteorological variables and monthly electricity demand, Applied Energy 98
+  (2012) 346--356.
+
 \bibitem{ke2016quantifying}
 X.~Ke, D.~Wu, J.~Rice, M.~Kintner-Meyer, N.~Lu, Quantifying impacts of heat
   waves on power grid operation, Applied energy 183 (2016) 504--512.
@@ -67,10 +52,25 @@ J.~A. A{\~n}el, M.~Fern{\'a}ndez-Gonz{\'a}lez, X.~Labandeira,
   X.~L{\'o}pez-Otero, L.~De~la Torre, Impact of cold waves and heat waves on
   the energy production sector, Atmosphere 8~(11) (2017) 209.
 
+\bibitem{psiloglou2009factors}
+B.~Psiloglou, C.~Giannakopoulos, S.~Majithia, M.~Petrakis, Factors affecting
+  electricity demand in athens, greece and london, uk: A comparative
+  assessment, Energy 34~(11) (2009) 1855--1863.
+
 \bibitem{paliza2021demanda}
 L.~M.~G. Paliza, K.~Caballera~G{\"u}edndulain, C.~A. Francisco~Cruz, La demanda
   de electricidad residencial y el cambio clim{\'a}tico en argentina, brasil,
   chile y colombia., Revista Chilena de Econom{\'\i}a y Sociedad 15~(2) (2021).
+
+\bibitem{moral2005modelling}
+J.~Moral-Carcedo, J.~Vic{\'e}ns-Otero, Modelling the non-linear response of
+  spanish electricity demand to temperature variations, Energy economics 27~(3)
+  (2005) 477--494.
+
+\bibitem{de2015seasonal}
+M.~De~Felice, A.~Alessandri, F.~Catalano, Seasonal climate forecasts for
+  medium-term electricity demand forecasting, Applied Energy 137 (2015)
+  435--444.
 
 \bibitem{zanek2022definicion}
 F.~Zanek, E.~Xamena, D.~Rodr{\'\i}guez, Definici{\'o}n de una red neuronal para
@@ -102,6 +102,13 @@ G.~S. Eskeland, T.~K. Mideksa, Electricity demand in a changing climate,
 \bibitem{mideksa2010impact}
 T.~K. Mideksa, S.~Kallbekken, The impact of climate change on the electricity
   market: A review, Energy policy 38~(7) (2010) 3579--3585.
+
+\bibitem{cammesa-web}
+A.~Name,
+  \href{https://cammesaweb.cammesa.com/2023/03/14/maximos-historicos-de-energia-y-
+  potencia-estacionales/}{Page title}, accessed: 2024-12-11 (2024).
+\newline\urlprefix\url{https://cammesaweb.cammesa.com/2023/03/14/maximos-historicos-de-energia-y-
+  potencia-estacionales/}
 
 \bibitem{macmackin2019modeling}
 N.~MacMackin, L.~Miller, R.~Carriveau, Modeling and disaggregating hourly
@@ -138,6 +145,16 @@ M.~Zhang, L.~Yan, Y.~Amonkar, A.~Nayak, U.~Lall, Potential climate
   predictability of renewable energy supply and demand for texas given the enso
   hidden state, Science Advances 10~(44) (2024) eado3517.
 
+\bibitem{smn}
+A.~Name, \href{https://www.argentina.gob.ar/smn/institucional/contacto}{Page
+  title}, accessed: 2024-12-11 (2024).
+\newline\urlprefix\url{https://www.argentina.gob.ar/smn/institucional/contacto}
+
+\bibitem{merra}
+A.~Name, \href{https://gmao.gsfc.nasa.gov/reanalysis/merra-2/}{Page title},
+  accessed: 2024-12-11 (2024).
+\newline\urlprefix\url{https://gmao.gsfc.nasa.gov/reanalysis/merra-2/}
+
 \bibitem{gelaro2017modern}
 R.~Gelaro, W.~McCarty, M.~J. Su{\'a}rez, R.~Todling, A.~Molod, L.~Takacs, C.~A.
   Randles, A.~Darmenov, M.~G. Bosilovich, R.~Reichle, et~al., The modern-era
@@ -165,6 +182,10 @@ A.~Donald, H.~Meinke, B.~Power, A.~d.~H. Maia, M.~C. Wheeler, N.~White, R.~C.
 C.~Zhang, Madden--julian oscillation: Bridging weather and climate, Bulletin of
   the American Meteorological Society 94~(12) (2013) 1849--1870.
 
+\bibitem{schreck2021global}
+C.~J. Schreck~III, Global survey of the mjo and extreme precipitation,
+  Geophysical Research Letters 48~(19) (2021) e2021GL094691.
+
 \bibitem{alvarez2016influence}
 M.~S. Alvarez, C.~Vera, G.~N. Kiladis, B.~Liebmann, Influence of the madden
   julian oscillation on precipitation and surface air temperature in south
@@ -179,6 +200,16 @@ M.~Ungerovich, M.~Barreiro, C.~Masoller, Influence of madden--julian
 M.~Jacques-Coper, D.~Veloso-Aguila, C.~Segura, A.~Valencia, Intraseasonal
   teleconnections leading to heat waves in central chile, International Journal
   of Climatology 41~(9) (2021) 4712--4731.
+
+\bibitem{wheeler2004all}
+M.~C. Wheeler, H.~H. Hendon, An all-season real-time multivariate mjo index:
+  Development of an index for monitoring and prediction, Monthly weather review
+  132~(8) (2004) 1917--1932.
+
+\bibitem{donald2004forecasting}
+A.~Donald, H.~Meinke, B.~Power, M.~Wheeler, J.~Ribbe, Forecasting with the
+  madden-julian oscillation and the applications for risk management, in:
+  Proceedings of the 4th International Crop Science Congress (ICSC 2004), 2004.
 
 \bibitem{gong1999definition}
 D.~Gong, S.~Wang, Definition of antarctic oscillation index, Geophysical
@@ -199,10 +230,11 @@ R.~D. Garreaud, M.~Vuille, R.~Compagnucci, J.~Marengo, Present-day south
 G.~Silvestri, C.~Vera, Nonstationary impacts of the southern annular mode on
   southern hemisphere climate, Journal of Climate 22~(22) (2009) 6142--6148.
 
-\bibitem{wheeler2004all}
-M.~C. Wheeler, H.~H. Hendon, An all-season real-time multivariate mjo index:
-  Development of an index for monitoring and prediction, Monthly weather review
-  132~(8) (2004) 1917--1932.
+\bibitem{villalba2012unusual}
+R.~Villalba, A.~Lara, M.~H. Masiokas, R.~Urrutia, B.~H. Luckman, G.~J.
+  Marshall, I.~A. Mundo, D.~A. Christie, E.~R. Cook, R.~Neukom, et~al., Unusual
+  southern hemisphere tree growth patterns induced by changes in the southern
+  annular mode, Nature geoscience 5~(11) (2012) 793--798.
 
 \bibitem{cleveland1990stl}
 R.~B. Cleveland, W.~S. Cleveland, J.~E. McRae, I.~Terpenning, et~al., Stl: A
@@ -218,5 +250,15 @@ W.~Cai, M.~J. McPhaden, A.~M. Grimm, R.~R. Rodrigues, A.~S. Taschetto, R.~D.
   Garreaud, B.~Dewitte, G.~Poveda, Y.-G. Ham, A.~Santoso, et~al., Climate
   impacts of the el ni{\~n}o--southern oscillation on south america, Nature
   Reviews Earth \& Environment 1~(4) (2020) 215--231.
+
+\bibitem{diaz2000nino}
+H.~F. Diaz, V.~Markgraf, El Ni{\~n}o and the Southern Oscillation: multiscale
+  variability and global and regional impacts, Cambridge University Press,
+  2000.
+
+\bibitem{wolter2011nino}
+K.~Wolter, M.~S. Timlin, El ni{\~n}o/southern oscillation behaviour since 1871
+  as diagnosed in an extended multivariate enso index (mei. ext), International
+  Journal of Climatology 31~(7) (2011) 1074--1087.
 
 \end{thebibliography}
