@@ -129,12 +129,6 @@ H.~Son, C.~Kim, Short-term forecasting of electricity demand for the
   residential sector using weather and social variables, Resources,
   conservation and recycling 123 (2017) 200--207.
 
-\bibitem{morais2023short}
-L.~B.~S. Morais, G.~Aquila, V.~A.~D. de~Faria, L.~M.~M. Lima, J.~W.~M. Lima,
-  A.~R. de~Queiroz, Short-term load forecasting using neural networks and
-  global climate models: An application to a large-scale electrical power
-  system, Applied Energy 348 (2023) 121439.
-
 \bibitem{juntunen2023electricity}
 V.~Juntunen, T.~Asikainen, Electricity consumption in finland influenced by
   climate effects of energetic particle precipitation, Scientific Reports
@@ -260,5 +254,30 @@ H.~F. Diaz, V.~Markgraf, El Ni{\~n}o and the Southern Oscillation: multiscale
 K.~Wolter, M.~S. Timlin, El ni{\~n}o/southern oscillation behaviour since 1871
   as diagnosed in an extended multivariate enso index (mei. ext), International
   Journal of Climatology 31~(7) (2011) 1074--1087.
+
+\bibitem{blazquez2013residential}
+L.~Bl{\'a}zquez, N.~Boogen, M.~Filippini, Residential electricity demand in
+  spain: New empirical evidence using aggregate data, Energy economics 36
+  (2013) 648--657.
+
+\bibitem{damm2017impacts}
+A.~Damm, J.~K{\"o}berl, F.~Prettenthaler, N.~Rogler, C.~T{\"o}glhofer, Impacts
+  of+ 2 c global warming on electricity demand in europe, Climate Services 7
+  (2017) 12--30.
+
+\bibitem{wenz2017north}
+L.~Wenz, A.~Levermann, M.~Auffhammer, North--south polarization of european
+  electricity consumption under future warming, Proceedings of the National
+  Academy of Sciences 114~(38) (2017) E7910--E7918.
+
+\bibitem{garrido2021impact}
+J.~M. Garrido-Perez, D.~Barriopedro, R.~Garc{\'\i}a-Herrera,
+  C.~Ord{\'o}{\~n}ez, Impact of climate change on spanish electricity demand,
+  Climatic Change 165~(3) (2021) 50.
+
+\bibitem{ralston2019seasonal}
+F.~Ralston~Fonseca, P.~Jaramillo, M.~Berg{\'e}s, E.~Severnini, Seasonal effects
+  of climate change on intra-day electricity demand patterns, Climatic Change
+  154~(3) (2019) 435--451.
 
 \end{thebibliography}

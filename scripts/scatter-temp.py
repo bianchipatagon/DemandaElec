@@ -123,9 +123,9 @@ ax1.set_title('DEF', fontsize = 13)
 ax1.set_ylim(200, 570)
 ax1.set_ylabel('[MWh]', fontsize=15)
 ax1.set_yticks([300,400,500])
-ax1.set_xticks([18,20,22,24,26,28], ['18','20','22','24','26','28'])
+ax1.set_xticks([20,25,30], ['20','25','30'])
 
-ax1.grid(color='gray', linestyle='dashed', which = 'both' )
+# ~ ax1.grid(color='gray', linestyle='dashed', which = 'both' )
 ##### oto
 kdeplot = sns.regplot(ax=ax2,x=float_totoA, y = float_dotoA, order=2, scatter_kws = {"alpha": 0.6, 's': 8}, line_kws = {"color": "black",'lw': 1}, ci= None, label=None)
 # ~ r, p_value = speeearmanr(float_totoA, float_dotoA)
