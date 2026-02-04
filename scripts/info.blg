@@ -5,49 +5,51 @@ The style file: elsarticle-num.bst
 Database file #1: mybibfile.bib
 Warning--I didn't find a database entry for "morais2023short"
 Warning--I didn't find a database entry for "gillett2006regional"
+Warning--I didn't find a database entry for "clark2017skilful"
 Warning--empty journal in detemperatura
 Warning--empty year in detemperatura
 Warning--empty pages in zanek2022definicion
 Warning--empty pages in donald2004forecasting
-You've used 56 entries,
+Warning--can't use both volume and number fields in soret2019sub
+You've used 64 entries,
             2952 wiz_defined-function locations,
-            994 strings with 16307 characters,
-and the built_in function-call counts, 17088 in all, are:
-= -- 1619
-> -- 614
-< -- 4
-+ -- 242
-- -- 186
-* -- 1254
-:= -- 2372
-add.period$ -- 56
-call.type$ -- 56
-change.case$ -- 59
+            1041 strings with 18300 characters,
+and the built_in function-call counts, 19882 in all, are:
+= -- 1870
+> -- 751
+< -- 6
++ -- 293
+- -- 229
+* -- 1476
+:= -- 2767
+add.period$ -- 64
+call.type$ -- 64
+change.case$ -- 67
 chr.to.int$ -- 0
-cite$ -- 60
-duplicate$ -- 491
-empty$ -- 1898
-format.name$ -- 234
-if$ -- 4354
+cite$ -- 69
+duplicate$ -- 571
+empty$ -- 2175
+format.name$ -- 285
+if$ -- 5047
 int.to.chr$ -- 0
-int.to.str$ -- 56
-missing$ -- 53
-newline$ -- 179
-num.names$ -- 56
-pop$ -- 336
+int.to.str$ -- 64
+missing$ -- 61
+newline$ -- 203
+num.names$ -- 64
+pop$ -- 380
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1056
+skip$ -- 1224
 stack$ -- 0
-substring$ -- 1105
-swap$ -- 77
-text.length$ -- 4
+substring$ -- 1284
+swap$ -- 99
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 4
-while$ -- 141
-width$ -- 58
-write$ -- 463
-(There were 6 warnings)
+warning$ -- 5
+while$ -- 162
+width$ -- 66
+write$ -- 529
+(There were 8 warnings)
