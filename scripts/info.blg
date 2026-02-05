@@ -6,50 +6,59 @@ Database file #1: mybibfile.bib
 Warning--I didn't find a database entry for "morais2023short"
 Warning--I didn't find a database entry for "gillett2006regional"
 Warning--I didn't find a database entry for "clark2017skilful"
+Warning--I didn't find a database entry for "de2019scoping"
 Warning--empty journal in detemperatura
 Warning--empty year in detemperatura
 Warning--empty pages in zanek2022definicion
+Warning--empty year in cammesa-web
+Warning--all relevant fields are empty in cammesa-web
+Warning--empty year in smn
+Warning--all relevant fields are empty in smn
+Warning--empty year in merra
+Warning--all relevant fields are empty in merra
 Warning--empty pages in donald2004forecasting
 Warning--can't use both volume and number fields in soret2019sub
-You've used 64 entries,
+Warning--empty year in cambios
+Warning--all relevant fields are empty in cambios
+You've used 67 entries,
             2952 wiz_defined-function locations,
-            1041 strings with 18300 characters,
-and the built_in function-call counts, 19882 in all, are:
-= -- 1870
-> -- 751
+            1049 strings with 18772 characters,
+and the built_in function-call counts, 20479 in all, are:
+= -- 1894
+> -- 775
 < -- 6
-+ -- 293
-- -- 229
-* -- 1476
-:= -- 2767
-add.period$ -- 64
-call.type$ -- 64
-change.case$ -- 67
++ -- 303
+- -- 236
+* -- 1537
+:= -- 2821
+add.period$ -- 67
+call.type$ -- 67
+change.case$ -- 63
 chr.to.int$ -- 0
-cite$ -- 69
-duplicate$ -- 571
-empty$ -- 2175
-format.name$ -- 285
-if$ -- 5047
+cite$ -- 80
+duplicate$ -- 592
+empty$ -- 2258
+format.name$ -- 294
+if$ -- 5198
 int.to.chr$ -- 0
-int.to.str$ -- 64
-missing$ -- 61
-newline$ -- 203
-num.names$ -- 64
-pop$ -- 380
+int.to.str$ -- 67
+missing$ -- 63
+newline$ -- 213
+num.names$ -- 63
+pop$ -- 396
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1224
+skip$ -- 1279
 stack$ -- 0
-substring$ -- 1284
+substring$ -- 1314
 swap$ -- 99
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 5
-while$ -- 162
-width$ -- 66
-write$ -- 529
-(There were 8 warnings)
+warning$ -- 13
+while$ -- 163
+width$ -- 69
+write$ -- 542
+(There were 17 warnings)

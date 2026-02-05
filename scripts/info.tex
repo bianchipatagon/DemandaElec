@@ -15,6 +15,10 @@
 \usepackage{float}
 \usepackage{fancyhdr}
 \usepackage{dirtytalk}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{breakurl} 
+\usepackage{rotating}
 \allowdisplaybreaks
 %\textwidth18cm
 %\textheight22cm
@@ -90,7 +94,7 @@ climático Modern-Era Retrospective analysis for Research and Applications, Vers
 La serie de demanda eléctrica es una agregación de los consumos individuales de multiples usuarios que estan dispersos geográficamente. Las variaciones climáticas afectan el consumo principalmente de los usuarios de los sectores residencial y comercial de diferentes maneras dependiendo de la región en la que se encuentran. Los consumidores de energía eléctrica no se encuentran equidistribuidos en el territorio, si no que se concentran en diferentes regiones. Actualmente, cerca del 70\% de la energía eléctrica consumida anualmente se concentra en las regiones Centro, Litoral, Ciudad Autonoma de Buenos Aires (C.A.B.A.) y Gran Buenos Aires (G.B.A) (ver figura \ref{mapa}). Como aproximación para confeccionar series de datos climáticos representativas de las zonas de mayor demanda eléctrica se realizó un promedio ponderado por población en los principales centros urbanos (Buenos Aires, Cordoba y Rosario).
 
 \begin{figure}[H]
-	\includegraphics[clip,width=.4\columnwidth]{mapa.png}
+	\includegraphics[clip,width=.5\columnwidth]{mapa.png}
 	\caption{\label{mapa} Distribución geográfica de la demanda eléctrica del año 2024. Adaptado de CAMMESA}
 \end{figure}
 
@@ -116,7 +120,7 @@ Las variables climáticas analizadas fueron temperatura promedio diaria, la cobe
 En esta escala temporal se analizó, además, la relación entre la demanda eléctrica y fenómenos climáticos no locales que influyen en el clima regional. En particlular, se analizarán dos fenómenos climáticos que ejercen una significativa influencia en el clima del sur de sudamérica (incluyendo Argentina) en la escala intra-estacional: un fenómeno de origen tropical (la Oscilación de Madden-Julian o MJO), y uno extra-tropical (la Oscilación Antártica). Estos fenómenos climáticos pueden alterar indirectamente la demánda eléctrica a través de la modificación de patrones de temperatura o nubosidad. La importancia de establecer estas relaciones radica en que pueden mejorar el horizonde de predictibilidad \cite{kim2018prediction} para la demanda eléctrica. La MJO es un patrón ciclico de lluvias tropicales \cite{zhang2005madden, kim2018prediction} que afecta variables meteorológicas no solo en los trópicos, sino también en regiones extra-tropicales \cite{donald2006near}; y es una de las principales causas de variabilidad climática intra-estacional a nivel global \cite{zhang2005madden, zhang2013madden, schreck2021global} . En particular, en el sur de Sudamérica, es conocida su influencia sobre las variables precipitación y temperatura \cite{alvarez2016influence,ungerovich2021influence,jacques2021intraseasonal}. Esta oscilación es monitoreada mediante diferentes índices; en este caso se utilizó el índice Real-time Multivariate MJO (RMM) propuesto por Wheeler y Hendon \cite{wheeler2004all} para analizar el impácto en la demanda eléctrica. El índice RMM permite el monitoreo de la MJO mediante la combinación de información sobre la convección tropical de gran escala (la cual se obtiene, a su vez, de monitoreo satelital de la radiación saliente de onda larga), y características de la circulación atmosférica en niveles altos y bajos de la tropósfera. A partir de esta información, se calculan los dos primeros componentes principales (RMM1 y RMM2), los cuales pueden ser interpretados como las coordenadas de un diagrama. La posición conjunta indica la localización geográfica de la convección tropical, y la distancia al origen indica la intensidad de la convección. Este indice consta de 8 fases, cada una de las cuales representa la ubicación geográfica de la convección. Las fases 1 y 8 para el Oceano Pacífico central y Este de Africa, las fases 2 y 3 para el Oceano Indico, las fases 4 y 5 para el continente marítimo, y las 6 y 7 para el Oceano Pacífico Oeste. La figura \ref{mjomapa} del trabajo de Donald et al. \cite{donald2004forecasting} muestra la localizaciónj aproximada de las fases de progresión de lluvia trópical de la MJO. Se consideran eventos MJO activos cuando la amplitud es mayor a 1; y la interpretación física de esto es que en estas situaciones es más probable que se propaguen anomalías climáticas a latitudes extratropicales. 
 
 \begin{figure}[H]
-	\includegraphics[clip,width=.8\columnwidth]{mjo.png}
+	\includegraphics[clip,width=.9\columnwidth]{mjo.png}
 	\caption{\label{mjomapa} Localización aproximada de las fases de progresión de lluvia trópical de la MJO. Fuente: Donald et al. (\cite{donald2004forecasting})}
 \end{figure} 
 
@@ -135,7 +139,7 @@ Para la escala temporal de largo plazo, en primera instancia se calcularon las s
 La relación entre la demanda eléctrica y las variables climáticas se analizó mediante el cálculo de coeficientes de correlación lineales y no lineales. Se realizó, además, un análisis de  tablas de contingencia. Para esto fue necesario segmentar tanto las series de variables climáticas y de demanda eléctrica. Las series de demanda y temperatura fueron segmentadas en terciles de la distribución (T1,T2,T3), mientras que los índices de la AAO y el Niño fueron segmentado por fases: negativa, neutral y positiva para la AAO; fría, neutral, cálida para El Niño. Las tablas de contingencia permiten identificar co-ocurrencia de eventos y asignar una significancia estadística a estos. Por ejemplo, esta metodología aplicada a este caso de estudio podria identificar si existe una tendencia (o no) a la ocurrencia de eventos de mayor o menor demánda eléctrica durante los eventos cálidos del Niño.  
 
 \begin{figure}[H]
-	\includegraphics[clip,width=0.9\columnwidth]{decomp.png}
+	\includegraphics[clip,width=1\columnwidth]{decomp.png}
 	\caption{\label{loess} Descomposición de Loess de la serie de demanda diaria (a) en las componentes de tendencia (b), estacional (c) y residual (d)}
 \end{figure}
  
@@ -151,14 +155,14 @@ La relación entre la demanda eléctrica y las variables climáticas se analizó
 Como se mencionó en la sección anterior, en este trabajo se contó con una serie diaria de demanda eléctrica de 16 años, y una serie horaria de tres años provistas por CAMMESA. La demanda eléctrica presenta variabilidad en varias escalas temporales (figura \ref{demanda}). Se observa una tendencia de largo plazo creciente (panel a)), relacionada a crecimiento de la población, la eléctrificación y la actividad económica (\cite{detemperatura}). La actividad económica pareciera estar relacionada también a la variabilidad interanual de largo plazo: en la figura \ref{loess} b) se grafica la componente de tendencia de Loess junto con el Producto Bruto Interno a valores constantes). Se observa también un marcado ciclo anual (panel b) figura \ref{demanda}), con máximos asociados a la climatización estival e invernal (\cite{detemperatura}). La escala de tiempo de alrededor de una semana tambien muestra una marcada variabilidad explicada tanto por factores meteorológicas de corto plazo, como por la merma en la actividad asociada a los fines de semana (panel c)). Finalmente se observa también la típica curva diaria que presenta, a su vez, diferencias estacionales: durante el invierno (curva violeta en figura \ref{demanda} d)) la demanda es mínima en horas de la madrugada, hay un máximo relativo alrededor de las 10:00, y un máximo absoluto alrededor de las 20:00, durante el verano (curva rosa), el máximo absoluto de demanda ocurre alrededor de las 15:00 debido al uso masivo de equipos de climatización. Luego, ocurre un máximo relativo alrededor de las 21:00.
 
 \begin{figure}[H]
-	\includegraphics[clip,width=.9\columnwidth]{multi.png}
+	\includegraphics[clip,width=1\columnwidth]{multi.png}
 	\caption{\label{demanda} Serie diaria de demanda eléctrica (a), y escalas características de variabilidad: anual (b), semanal (c) y diaria (d) - la curva violeta representa la demanda promedio de invierno, la curva rosa representa la demanda promedio de verano}
 \end{figure}
 
 Otra característica que se observa en la serie temporal de demanda es un aumento en el empuntamiento anual de la demanda. Esto significa que los valores máximos de demanda de invierno y verano aumentan en mayor proporción que la demanda de otros momentos del año. La figura \ref{aumento} muestra la diferencia entre los valores máximo y mínimo diario para cada año, y se puede observar una tendencia creciente hasta el año 2019 aproximadamente. Este efecto es conocido y se debe al aumento de usos de climatización (\cite{detemperatura}).
 
 \begin{figure}[H]
-	\includegraphics[clip,width=.4\columnwidth]{minmax.png}
+	\includegraphics[clip,width=.5\columnwidth]{minmax.png}
 	\caption{\label{aumento} Diferencia anual entre maximo y mínimo absolutos de demanda diaria}
 \end{figure}
 
@@ -170,7 +174,7 @@ En esta sección se describen los resultados del análisis de correlación a niv
 La variable nubosidad presenta en general correlaciones de una significancia menor a la temperatura. Para el mes de abril las correlaciones son positivas (mayor nubosidad/mayor demanda) durante todo el dia, pero principalmente en las horas cercanas al mediodia. No es posible dilucidar si esta correlación se debe a cambios en los usos de iluminación o climatización. Durante el mes de julio se observan correlaciones negativas durante las horas nocturnas. Esto quizá pueda deberse a que a mayor cobertura nubosa menor es la perdida de calor radiativo y, por lo tanto, menor el descenso termico nocturno. Luego, son positivas en la franja horaria entre el mediodia y la tarde. En el mes de septiembre las correlaciones son positivas en todas las horas del dia, aunque significativas en la franja horaria que abarca desde el mediodia hasta la noche. Finalmente para el mes de diciembre se observan correlaciones negativas principalmente a partir del mediodia y en horas de la tarde, probablemente asociado a menores temperaturas máximas debido a una una menor radiación solar indicente en superficie. 
 
 \begin{figure}[H]
-	\includegraphics[clip,width=.7\columnwidth]{corr.jpg}
+	\includegraphics[clip,width=.8\columnwidth]{corr.jpg}
 	\caption{\label{corr} Coeficientes de correlación horarios entre demanda eléctrica y temperatura (columna izquierda) y nubosidad (columna derecha). Las líneas discontinuas indicas los valores de correlación estadísticamente significativos con un nivel de significancia de 0.05}
 \end{figure}
 
@@ -181,7 +185,7 @@ La variable velocidad del viento muestra correlaciones aún más débiles y no s
 A continuación se analiza la relación entre el empuntamiento diario de la demanda eléctrica y diferentes variables meteorológicas. Para el mes de abril no se observa una relación entre el empuntamiento de la demanda y las variables meteorológicas. Esto quizá se deba a que, como se verá más adelante, durante las estaciones de transición tanto bajas como altas temperaturas pueden incrementar la demanda eléctrica, lo que se refleja en un bajo coeficiente de correlación. Para el mes de julio se observan correlaciones negativas con las variables $T_{max}$, $T_{min}$ y $\bar{T}$, lo que implica que a mayor temperatura, menor es el empuntamiento. Llamativamente, también se observa una correlación negativa con la amplitud térmica diaria, lo que hace sospechar que el empuntamiento de la demanda depende de la temperatura media o máxima, y no de la diferencia entre la temperatura de la tarde y la de la mañana. En cuanto a la nubosidad, se observan correlaciones positivas no significativas, reflejando el hecho de que la nubosidad disminuye la demanda en horas de la madrugada y la aumenta en horas de la tarde (figura \ref{corr}).
 
 \begin{figure}[H]
-	\includegraphics[clip,width=.9\columnwidth]{punta.jpg}
+	\includegraphics[clip,width=1\columnwidth]{punta.jpg}
 	\caption{\label{punta} Coeficientes de correlación entre empuntamiento diario de la demanda eléctrica y parámetros meteorológicos}
 \end{figure}
 
@@ -207,7 +211,7 @@ La MJO produce impactos bien diferenciados en la demanda eléctrica durante las 
 Para el trimestre de invierno se observa una disminución de la demanda en la fase 6, la cual esta asociada a mayores temperaturas; y un aumento en la fase 7, asociada a menores temperaturas. Ambas variaciones en torno al 2\% con respecto al promedio. Llama la atención que las fases 1 y 3, asociadas a marcadas anomalías positivas y negativas de temperatura respectivamente, no produzcan una respuesta en la demanda. Para el trimestre de primavera se observa una marcada disminución en la demanda durante la fase 8, la cual esta asociada a mayores temperaturas en el centro del pais.
 
 \begin{figure}[H]
-	\includegraphics[clip,width=1\columnwidth]{T2M.png}
+	\includegraphics[angle=90,clip,width=1\columnwidth]{T2M.png}
 	\caption{\label{mjoT} Mapas de anomalías de temperatura del aire por estación del año y por fase de la MJO}
 \end{figure}
 
@@ -250,8 +254,18 @@ La importancia de analizar estos vinculos radica en el potencial que tienen para
 
 En particular, se ha estudiado la relación entre la MJO y la AAO y el recurso eólico \cite{lledo2020predicting, bianchi2022assessing}, pero no hay antecedentes en el uso de estos indices en relación a la demanda eléctrica.
 
-En la escala interanual no se hallaron relaciones robustas entre la demanda eléctrica e indicadores climáticos tanto locales como remotos. La principal dificultad en la caracterización de relaciones entre la demanda eléctrica y factores climáticos en esta escala temporal radica en que la demanda también depende de factores no climáticos \cite{psiloglou2009factors,khatoon2014effects, cassarino2018impact, paliza2021demanda}, como actividad económica \cite{khatoon2014effects, cassarino2018impact}, o cambios estructurales de largo plazo en usos energéticos \cite{detemperatura}. En el caso de Argentina se puede observar como el crecimiento del PBI entre los años 2007-2018 (figura \ref{loess}), y su posterior decrecimiento determinaron las variaciones de largo plazo de la demanda. 
+Al igual que en la escala sub-estacional, el estudio de relciones entre demanda eléctrica y variables climáticas es importante para la identificación de potenciales ventanas de predictibilidad \cite{de2015seasonal,white2017potential, de2019scoping} y para escenarios de prospectiva \cite{eskeland2010electricity}. no se hallaron relaciones robustas entre la demanda eléctrica e indicadores clim´aticos tanto locales como remotos. La principal dificultad en la caracterización de relaciones entre la demanda eléctrica y factores climáticos en esta escala temporal radica en que la demanda también depende de factores no climáticos \cite{psiloglou2009factors,khatoon2014effects, cassarino2018impact, paliza2021demanda}, como actividad económica \cite{khatoon2014effects, cassarino2018impact}, o cambios estructurales de largo plazo en usos energéticos \cite{detemperatura}. En el caso de Argentina se puede observar como el crecimiento del PBI entre los años 2007-2018 (figura \ref{loess}), y su posterior decrecimiento determinaron las variaciones de largo plazo de la demanda.
 
+Otros autores han identificado la dificultad de discriminar las causas climáticas de las no climáticas en la variabilidad de la demanda eléctrica. Por ejemplo, en el trabajo de Juntunen y Asikainen \cite{juntunen2023electricity} se removió la tendencia lineal a la serie de tendencia para conservar solo las variaciones inter-anuales. Otros autores como Bloomfield et al. \cite{bloomfield2016quantifying, bloomfield2018changing} o Zhang et al. \cite{zhang2024potential} , que ha estudiado el efecto de el fenómeno Niño en la predictibilidad de la demanda eléctrica en Texas, proponen la construcción de ''demandas sinteticas'' mediante la utilización de modelos de regresión lineal multiple basados en temperatura o variables como heating-degree y cooling-degree days. De esta manera, se captura solo la variabilidad de origen climático, y tiene la ventaja adicional de que se puede extender la serie de demanda eléctrica con sus características de variabilidad actuales en el período que cubren los datos observacionales. Este sería un próximo paso a realizar para estudiar la variabilidad de la demanda eléctrica de largo plazo.
+
+
+\begin{figure}[H]
+	\includegraphics[clip,width=.8\columnwidth]{temp.png}
+	\caption{\label{T-cambio} Cambios proyectados en la temperatura media anual (°C) en el período 2021-
+		2040 (primera fila), 2041-2060 (segunda fila) y 2081-2100 (tercera fila) respecto del período
+		1986-2005 para los escenarios SSP1-2.6 (primera columna), SSP2-4.5 (segunda columna) y
+		SSP5-8.5 (tercera columna). Fuente: ‭Ministerio de Ambiente y Desarrollo Sostenible \cite{cambios}‬}
+\end{figure}
 
 
 

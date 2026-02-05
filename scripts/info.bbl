@@ -104,9 +104,8 @@ T.~K. Mideksa, S.~Kallbekken, The impact of climate change on the electricity
   market: A review, Energy policy 38~(7) (2010) 3579--3585.
 
 \bibitem{cammesa-web}
-A.~Name,
-  \href{https://cammesaweb.cammesa.com/2023/03/14/maximos-historicos-de-energia-y-
-  potencia-estacionales/}{Page title}, accessed: 2024-12-11 (2024).
+\href{https://cammesaweb.cammesa.com/2023/03/14/maximos-historicos-de-energia-y-
+  potencia-estacionales/}{[link]}.
 \newline\urlprefix\url{https://cammesaweb.cammesa.com/2023/03/14/maximos-historicos-de-energia-y-
   potencia-estacionales/}
 
@@ -140,13 +139,11 @@ M.~Zhang, L.~Yan, Y.~Amonkar, A.~Nayak, U.~Lall, Potential climate
   hidden state, Science Advances 10~(44) (2024) eado3517.
 
 \bibitem{smn}
-A.~Name, \href{https://www.argentina.gob.ar/smn/institucional/contacto}{Page
-  title}, accessed: 2024-12-11 (2024).
+\href{https://www.argentina.gob.ar/smn/institucional/contacto}{[link]}.
 \newline\urlprefix\url{https://www.argentina.gob.ar/smn/institucional/contacto}
 
 \bibitem{merra}
-A.~Name, \href{https://gmao.gsfc.nasa.gov/reanalysis/merra-2/}{Page title},
-  accessed: 2024-12-11 (2024).
+\href{https://gmao.gsfc.nasa.gov/reanalysis/merra-2/}{[link]}.
 \newline\urlprefix\url{https://gmao.gsfc.nasa.gov/reanalysis/merra-2/}
 
 \bibitem{gelaro2017modern}
@@ -323,5 +320,19 @@ L.~Lledo, F.~J. Doblas-Reyes, Predicting daily mean wind speed in europe weeks
 E.~Bianchi, T.~Guozden, R.~Kozulj, Assessing low frequency variations in solar
   and wind power and their climatic teleconnections, Renewable Energy 190
   (2022) 560--571.
+
+\bibitem{bloomfield2016quantifying}
+H.~C. Bloomfield, D.~J. Brayshaw, L.~C. Shaffrey, P.~J. Coker, H.~E. Thornton,
+  Quantifying the increasing sensitivity of power systems to climate
+  variability, Environmental Research Letters 11~(12) (2016) 124025.
+
+\bibitem{bloomfield2018changing}
+H.~Bloomfield, D.~J. Brayshaw, L.~Shaffrey, P.~J. Coker, H.~E. Thornton, The
+  changing sensitivity of power systems to meteorological drivers: a case study
+  of great britain, Environmental Research Letters 13~(5) (2018) 054028.
+
+\bibitem{cambios}
+\href{https://bicyt.conicet.gov.ar/fichas/produccion/12629332}{[link]}.
+\newline\urlprefix\url{https://bicyt.conicet.gov.ar/fichas/produccion/12629332}
 
 \end{thebibliography}
