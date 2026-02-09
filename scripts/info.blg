@@ -3,10 +3,7 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: info.aux
 The style file: elsarticle-num.bst
 Database file #1: mybibfile.bib
-Warning--I didn't find a database entry for "morais2023short"
 Warning--I didn't find a database entry for "gillett2006regional"
-Warning--I didn't find a database entry for "clark2017skilful"
-Warning--I didn't find a database entry for "de2019scoping"
 Warning--empty journal in detemperatura
 Warning--empty year in detemperatura
 Warning--empty pages in zanek2022definicion
@@ -20,45 +17,45 @@ Warning--empty pages in donald2004forecasting
 Warning--can't use both volume and number fields in soret2019sub
 Warning--empty year in cambios
 Warning--all relevant fields are empty in cambios
-You've used 67 entries,
+You've used 70 entries,
             2952 wiz_defined-function locations,
-            1049 strings with 18772 characters,
-and the built_in function-call counts, 20479 in all, are:
-= -- 1894
-> -- 775
+            1060 strings with 19432 characters,
+and the built_in function-call counts, 21414 in all, are:
+= -- 1977
+> -- 820
 < -- 6
-+ -- 303
-- -- 236
-* -- 1537
-:= -- 2821
-add.period$ -- 67
-call.type$ -- 67
-change.case$ -- 63
++ -- 320
+- -- 250
+* -- 1612
+:= -- 2958
+add.period$ -- 70
+call.type$ -- 70
+change.case$ -- 66
 chr.to.int$ -- 0
-cite$ -- 80
-duplicate$ -- 592
-empty$ -- 2258
-format.name$ -- 294
-if$ -- 5198
+cite$ -- 83
+duplicate$ -- 616
+empty$ -- 2353
+format.name$ -- 311
+if$ -- 5429
 int.to.chr$ -- 0
-int.to.str$ -- 67
-missing$ -- 63
-newline$ -- 213
-num.names$ -- 63
-pop$ -- 396
+int.to.str$ -- 70
+missing$ -- 66
+newline$ -- 222
+num.names$ -- 66
+pop$ -- 411
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1279
+skip$ -- 1333
 stack$ -- 0
-substring$ -- 1314
-swap$ -- 99
+substring$ -- 1375
+swap$ -- 102
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 13
-while$ -- 163
-width$ -- 69
-write$ -- 542
-(There were 17 warnings)
+while$ -- 170
+width$ -- 72
+write$ -- 566
+(There were 14 warnings)

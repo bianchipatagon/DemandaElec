@@ -128,6 +128,12 @@ H.~Son, C.~Kim, Short-term forecasting of electricity demand for the
   residential sector using weather and social variables, Resources,
   conservation and recycling 123 (2017) 200--207.
 
+\bibitem{lis2023short}
+L.~B.~S. Morais, G.~Aquila, V.~A.~D. de~Faria, L.~M.~M. Lima, J.~W.~M. Lima,
+  A.~R. de~Queiroz, Short-term load forecasting using neural networks and
+  global climate models: An application to a large-scale electrical power
+  system, Applied Energy 348 (2023) 121439.
+
 \bibitem{juntunen2023electricity}
 V.~Juntunen, T.~Asikainen, Electricity consumption in finland influenced by
   climate effects of energetic particle precipitation, Scientific Reports
@@ -277,6 +283,11 @@ F.~Ralston~Fonseca, P.~Jaramillo, M.~Berg{\'e}s, E.~Severnini, Seasonal effects
   of climate change on intra-day electricity demand patterns, Climatic Change
   154~(3) (2019) 435--451.
 
+\bibitem{clark2017skilful}
+R.~T. Clark, P.~E. Bett, H.~E. Thornton, A.~A. Scaife, Skilful seasonal
+  predictions for the european energy industry, Environmental Research Letters
+  12~(2) (2017) 024002.
+
 \bibitem{soret2019sub}
 A.~Soret, V.~Torralba, N.~Cortesi, I.~Christel, L.~Palma,
   A.~Manrique-Su{\~n}{\'e}n, L.~Lled{\'o}, N.~Gonz{\'a}lez-Reviriego, F.~J.
@@ -320,6 +331,11 @@ L.~Lledo, F.~J. Doblas-Reyes, Predicting daily mean wind speed in europe weeks
 E.~Bianchi, T.~Guozden, R.~Kozulj, Assessing low frequency variations in solar
   and wind power and their climatic teleconnections, Renewable Energy 190
   (2022) 560--571.
+
+\bibitem{de2019scoping}
+M.~De~Felice, M.~B. Soares, A.~Alessandri, A.~Troccoli, Scoping the potential
+  usefulness of seasonal climate forecasts for solar power management,
+  Renewable Energy 142 (2019) 215--223.
 
 \bibitem{bloomfield2016quantifying}
 H.~C. Bloomfield, D.~J. Brayshaw, L.~C. Shaffrey, P.~J. Coker, H.~E. Thornton,
